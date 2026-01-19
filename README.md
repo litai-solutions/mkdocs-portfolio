@@ -18,6 +18,10 @@ As you go through this setup, please find all the most up to date information in
 
 ## Quick Start
 
+## launch website local
+
+uv run mkdocs serve --dev-addr 0.0.0.0:8001
+
 
 ### Option 1: Local Installation (Recommended for Mac Users)
 
