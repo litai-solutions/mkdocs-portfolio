@@ -1,11 +1,11 @@
-site_name: Your Site Name
-site_description: Your site description
-site_url: https://yourdomain.com
+site_name: LITAI LLC
+site_description: LITAI is a company that provides AI solutions for businesses.
+site_url: https://litai-solutions.com
 
 nav:
   - Home:
     - About: index.md
-  - Case Studies:
+  - Project examples:
     - Overview: portfolio/index.md
     - Projects:
       - portfolio/projects/project-1.md
@@ -44,21 +44,20 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  icon:
-    logo: material/slash-forward-box
-  favicon: assets/favicon.png
+  logo: assets/Logo-Icon-1.png
+  favicon: assets/Logo-Icon-1.png
 
 extra:
   generator: true
   social:
-    - icon: fontawesome/solid/building
-      link: https://company.com
+ #   - icon: fontawesome/solid/building
+ #     link: https://company.com
     - icon: fontawesome/brands/github
       link: https://github.com/
-    - icon: fontawesome/brands/youtube
-      link: https://youtube.com/
+ #   - icon: fontawesome/brands/youtube
+ #     link: https://youtube.com/
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com
+      link: https://www.linkedin.com/in/halyna-galanzina/
   analytics:
     # provider: google
     # property: G-W9Y130NXVZ
@@ -102,4 +101,4 @@ extra_files:
   - docs/robots.txt
 
 copyright: |
-  &copy; 2024 <a href="https://www.linkedin.com" target="_blank" rel="noopener">John Doe</a>. All rights reserved.
+  &copy; 2026 <a href="https://www.linkedin.com/in/halyna-galanzina/" target="_blank" rel="noopener">LITAI LLC</a>. All rights reserved.
