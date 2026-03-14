@@ -3,9 +3,8 @@ date: 2024-11-03
 authors:
   - halynagalanzina
 categories:
-  - AI Development
-  - Workflow
-  - Tools
+  - AI Engineering
+  - Engineering Culture
 description: How AI-assisted app development transformed my data science workflow and replaced Jupyter Notebooks
 slug: breaking-up-with-jupyter-notebooks
 ---
