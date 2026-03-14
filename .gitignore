@@ -94,3 +94,6 @@ target/
 
 # exclude data from source control by default
 # /data/
+
+# Temporary working files
+tmp/

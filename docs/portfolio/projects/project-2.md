@@ -1,85 +1,61 @@
 ---
-title: Enterprise Chatbot for Company Y
-description: Development of a private ChatGPT-like tool for analyzing mobility data and policy evaluation in the public sector
+title: RAG Evaluation Infrastructure
+description: Systematic measurement layer for an enterprise search assistant — LLM-as-a-judge framework with CI/CD regression testing.
 ---
 
-# Enterprise Chatbot for the Company Y
+# RAG Evaluation Infrastructure
 
-??? tip "Portfolio Best Practices"
-    This is a simplified example project. When creating your own portfolio:
-    
-    - Include detailed technical challenges and how you solved them
-    - Add specific metrics and KPIs that demonstrate impact
-    - Show code snippets of interesting implementations
-    - Include architecture diagrams and system designs
-    - Document your decision-making process
-    - Highlight your specific contributions to the project
-    - Add visuals of the final product (if possible)
+!!! abstract "Project Summary"
+    **Client**: Enterprise Platform
+    **Industry**: Enterprise Search / Knowledge Management
 
-!!! abstract "Case Study Summary"
-    **Client**: Dev X  
-    **Website**: [devx.com](https://devx.com)  
-    **Industry**: Software Development  
-    
     **Impact Metrics**:
-    
-    - 90% reduction in customer service overhead (projected)
-    - 100% accuracy on initial evaluation datasets
-    - < 3 second response time for customer inquiries
-    - Successfully transitioned 12 CSRs to account management roles
-    - $240,000 annual cost savings in customer support operations
 
-Company Y an AI project featuring a private ChatGPT-like tool, streamlining mobility data analysis and advancing digital innovation in public sector policy evaluation.
+    - Replaced noisy, unreliable quality metrics with calibrated measurements
+    - Established CI/CD regression testing for search quality
+    - Reduced evaluation costs using open-source models as judges
+    - Created a repeatable framework for ongoing quality monitoring
 
 ## Challenge
 
-The regional data team at Company Y faced the challenge of analyzing complex mobility data, including cars, bridges, traffic, and cyclists. Tasked with assessing policy compliance and the impact of changes, they struggled with data scattered across multiple systems, such as the Dexter portal's structured SQL data and various policy documents. This dispersion made analysis laborious, prompting the Province to explore how digitization and AI could streamline the process and foster innovation.
+The client had a production RAG-based search assistant but no reliable way to measure whether it was actually working well. Existing metrics were noisy and inconsistent — teams couldn't tell if changes improved or degraded search quality. Without trustworthy evaluation, every deployment was a gamble.
 
-## Our Approach
+## Approach
 
-To tackle this challenge, we developed a custom-built AI solution similar to a "private version of ChatGPT." This tool was designed to access and analyze large volumes of PDF documents and structured data exported from the Dexter database. By enabling a ChatGPT-like interaction, users could query this diverse data pool in a conversational manner, leveraging the AI to gain company-specific insights.
+I built a systematic measurement layer designed for production reliability:
 
-## Results & Impact
+- **LLM-as-a-judge framework**: Calibrated evaluation using well-defined rubrics rather than vague quality scores
+- **Cost-efficient architecture**: Used open-source models as judges instead of expensive commercial APIs, without sacrificing evaluation quality
+- **CI/CD integration**: Automated regression testing so search quality was verified on every deployment
+- **Metric calibration**: Replaced noisy signals with measurements that teams could actually trust and act on
 
-- Successfully integrated structured SQL data and unstructured PDF documents
-- Featured in major company meetings
-- Enabled conversational querying of complex mobility data
-- Streamlined policy compliance assessment
-- Enhanced decision-making through comprehensive data analysis
+## Results
 
-## Solution Overview
-
-![Architecture Diagram](../../assets/openai-end-to-end-aml-deployment.svg)
-
-*Baseline OpenAI end-to-end chat reference architecture*
+- **Trustworthy metrics** — teams can now confidently assess whether changes improve search quality
+- **Automated regression testing** — quality is verified in CI/CD, not manually after deployment
+- **Cost-efficient evaluation** — OSS models as judges reduced ongoing evaluation costs significantly
+- **Repeatable framework** — the evaluation infrastructure scales as the search system evolves
 
 ## Tech Stack
 
-- OpenAI
-- Pinecone vector database
-- Microsoft Azure cloud infrastructure
-- Python backend services
-- FastAPI for RESTful endpoints
-- Docker containerization
-- GitHub Actions for CI/CD pipeline
+- Python
+- LLM-as-a-judge evaluation framework
+- Open-source language models for cost-efficient judging
+- CI/CD pipeline integration
+- Statistical calibration and metric design
 
-## Additional Context
+## My Role
 
-- Timeline: 3 months
-- Team Size: 2 people
-- Role: AI Engineer
-- Expertise in custom chatbot development
-- Specialization in retrieval-augmented generation
-- Focus on OpenAI model integration
+Designed and built the entire evaluation infrastructure — from metric definition and judge calibration to CI/CD integration and production deployment.
 
 <div class="grid cards" style="margin-top: 3rem" markdown>
 
--   :material-coffee:{ .lg .middle } Let's have a virtual coffee together!
+-   :material-coffee:{ .lg .middle } Need to measure your RAG system's quality?
 
     ---
-    
-    Want to see if we're a match? Let's have a chat and find out. Schedule a free 30-minute strategy session to discuss your AI challenges and explore how we can work together.
 
-    [Book Free Intro Call :material-arrow-top-right:](https://calendly.com){ .md-button .md-button--primary }
+    Evaluation is the foundation of trust in AI systems. Let's talk about building measurement into yours.
+
+    [Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
 
 </div>

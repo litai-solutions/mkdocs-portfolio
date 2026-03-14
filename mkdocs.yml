@@ -1,17 +1,20 @@
 site_name: LITAI LLC
-site_description: LITAI is a company that provides AI solutions for businesses.
+site_description: LITAI LLC — Document AI, RAG evaluation, and production-grade extraction systems for investment firms, legal ops, and enterprise platforms.
 site_url: https://litai-solutions.com
 
 nav:
   - Home:
     - About: index.md
-  - Project examples:
+  - Services: services.md
+  - Case Studies:
     - Overview: portfolio/index.md
     - Projects:
       - portfolio/projects/project-1.md
       - portfolio/projects/project-2.md
+      - portfolio/projects/project-3.md
+      - portfolio/projects/project-4.md
   - Blog:
-    - blog/index.md 
+    - blog/index.md
 
 theme:
   name: material
@@ -53,7 +56,7 @@ extra:
  #   - icon: fontawesome/solid/building
  #     link: https://company.com
     - icon: fontawesome/brands/github
-      link: https://github.com/
+      link: https://github.com/litai-solutions
  #   - icon: fontawesome/brands/youtube
  #     link: https://youtube.com/
     - icon: fontawesome/brands/linkedin
@@ -67,9 +70,9 @@ extra_css:
   - stylesheets/hero.css
 plugins:
   - search
-  - social:
-      cards_layout_options:
-        background_color: "#111111"
+  # - social:
+  #     cards_layout_options:
+  #       background_color: "#111111"
   - blog:
       blog_dir: blog
       authors_file: "{blog}/.authors.yml"
