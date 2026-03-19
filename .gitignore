@@ -98,3 +98,9 @@ target/
 # Temporary working files
 tmp/
 .claude/
+
+# Drafts
+drafts/
+
+# Built site (rebuilt by gh-deploy)
+site/
