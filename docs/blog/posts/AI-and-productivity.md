@@ -11,7 +11,7 @@ slug: ai-and-productivity
 
 # AI and expansion of ambition
 
-![AI and expansion of ambition](images/oroductivity-expansion.png)
+![AI and expansion of ambition](images/productivity-expansion.png)
 
 I keep noticing this new pattern in how I work, think, and make decisions. Recently, it showed up so clearly that I felt it was worth writing down.
 
