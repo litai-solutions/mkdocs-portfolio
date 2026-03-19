@@ -1,0 +1,156 @@
+/* Light theme custom colors */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #000111;
+  --md-accent-fg-color: #2856f7;
+  --md-typeset-a-color: var(--md-accent-fg-color);
+  --md-footer-bg-color: var(--md-primary-fg-color);
+}
+
+/* Dark theme custom colors */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #000111;
+  --md-default-bg-color: #090d1d;
+  --md-accent-fg-color: #8e92f8;
+  --md-typeset-a-color: var(--md-accent-fg-color);
+}
+
+/* Dark Theme Custom Button */
+[data-md-color-scheme="slate"] .md-button {
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+/* Optional: Custom hover effects */
+[data-md-color-scheme="slate"] .md-button:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+}
+
+/* Footer Section */
+.md-footer {
+  background-color: #090d1d;
+}
+
+.md-footer-meta {
+  background-color: #000111;
+}
+
+/* Testimonial cards */
+.grid.cards.testimonials {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.grid.cards.testimonials > * {
+    margin-top: 0 !important;
+}
+
+/* Style the author name and title */
+.grid.cards.testimonials p:nth-child(2) {
+    margin-top: -0.5rem;
+    color: var(--md-default-fg-color--light);
+    font-size: 0.9rem;
+}
+
+/* Light grey background for grid cards */
+[data-md-color-scheme="default"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="default"] .md-typeset .grid.cards li,
+[data-md-color-scheme="default"] .grid.cards > ul > li,
+[data-md-color-scheme="default"] .grid.cards li {
+    background-color: #f5f5f5 !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards li,
+[data-md-color-scheme="slate"] .grid.cards > ul > li,
+[data-md-color-scheme="slate"] .grid.cards li {
+    background-color: #1a1f2e !important;
+    border: 1px solid #2a2f3e !important;
+}
+
+/* Blog category pills — sidebar navigation */
+.md-sidebar .md-nav__link[href*="category"] {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin: 0.2rem 0.15rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: all 0.2s ease;
+}
+
+[data-md-color-scheme="default"] .md-sidebar .md-nav__link[href*="category"] {
+    background-color: #f0f0f5;
+    color: #333;
+    border: 1px solid #d0d0d8;
+}
+
+[data-md-color-scheme="default"] .md-sidebar .md-nav__link[href*="category"]:hover {
+    background-color: #2856f7;
+    color: #fff;
+    border-color: #2856f7;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar .md-nav__link[href*="category"] {
+    background-color: #1a1f2e;
+    color: #c0c4d0;
+    border: 1px solid #2a2f3e;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar .md-nav__link[href*="category"]:hover {
+    background-color: #8e92f8;
+    color: #0a0e1a;
+    border-color: #8e92f8;
+}
+
+/* Make the category list flow inline */
+.md-sidebar .md-nav[data-md-level="1"] .md-nav__list:has(.md-nav__link[href*="category"]) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+    padding: 0.25rem 0;
+}
+
+/* Blog post inline category tags */
+.md-typeset .md-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.md-typeset .md-categories .md-category {
+    padding: 0.2rem 0.65rem;
+    border-radius: 1rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+[data-md-color-scheme="default"] .md-typeset .md-categories .md-category {
+    background-color: #f0f0f5;
+    color: #333;
+    border: 1px solid #d0d0d8;
+}
+
+[data-md-color-scheme="default"] .md-typeset .md-categories .md-category:hover {
+    background-color: #2856f7;
+    color: #fff;
+    border-color: #2856f7;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-categories .md-category {
+    background-color: #1a1f2e;
+    color: #c0c4d0;
+    border: 1px solid #2a2f3e;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-categories .md-category:hover {
+    background-color: #8e92f8;
+    color: #0a0e1a;
+    border-color: #8e92f8;
+}
+
