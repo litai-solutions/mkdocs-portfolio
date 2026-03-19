@@ -663,6 +663,68 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hobby Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hobby Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -678,6 +740,34 @@
     
   
     AI Shop Assistant — Concept Demo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../portfolio/projects/project-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trivi — Side-Brain for Trivial Tasks
   
 
     
@@ -1287,13 +1377,12 @@
 
 
 <h1 id="precision-is-table-stakes-recall-is-the-frontier">Precision is Table Stakes; Recall is the Frontier</h1>
-<p>In the discussion around Large Language Models, the fear of hallucinations — incorrect information — often dominates the conversation. Achieving 100% precision is a prerequisite for any financial data system; "no garbage in" is a non-negotiable rule. However, for professional-grade extraction, the more difficult challenge is recall. If an LLM encounters a complex website structure or a 50-page legal document, it often loses focus, missing critical details buried in the text.</p>
+<p>In the discussion around Large Language Models, the fear of hallucinations — incorrect information — often dominates the conversation. Achieving 100% precision is a prerequisite for any financial data system; "no garbage in" is a non-negotiable rule. However, for professional-grade extraction with LLMs, the more difficult challenge is recall. If an LLM encounters a complex website structure or a 50-page legal document, it often loses focus, missing critical details buried in the text.</p>
 <!-- more -->
 
-<p>We addressed this by redesigning the traditional extract-in-one-shot architecture. By splitting the process into multiple stages — first gathering evidence through an LLM-based websearch, then parsing that evidence into structured models — we pushed recall above 90%. It was still a project where precision had the upper hand, so we decided to stop there. Such multi-stage approach prevents the model from being overwhelmed by long contexts, ensuring that nuanced details, such as specific investment policy requirements, are not left on the table.</p>
+<p>We addressed this by redesigning the traditional extract-in-one-shot architecture. By splitting the process into multiple stages — first gathering evidence through an LLM-based websearch or scanning, then parsing that evidence into structured models — we pushed recall above 90%. It was still a project where precision had the upper hand, so we decided to stop there. Such multi-stage approach prevents the model from being overwhelmed by long contexts, ensuring that nuanced details, such as specific investment policy requirements, are not left on the table.</p>
 <p>Without high recall, automation is just a faster way to get an incomplete picture.</p>
 <hr />
-<p><em>Based on real-world experience building extraction pipelines where completeness matters as much as correctness.</em></p>
 
 
 

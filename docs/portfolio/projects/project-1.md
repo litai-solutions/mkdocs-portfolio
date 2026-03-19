@@ -20,13 +20,13 @@ description: Automated extraction of 690+ complex entities from investment docum
 
 ## Challenge
 
-The client's product value was inseparable from the integrity of its database. The original process was a "human-in-the-loop" factory: 3 to 7 analysts manually extracting data, with mid-level supervisors reviewing and disputing entries. While this maintained high quality, the model couldn't scale. Data was decaying faster than the team could refresh it, and manual extraction became a permanent operational bottleneck.
+The client's product value was inseparable from the integrity of its database. The original process was a "human-loop" factory: 3 to 7 analysts manually extracting data, with mid-level supervisors reviewing and disputing entries. While this maintained high quality, the model couldn't scale. Data was decaying faster than the team could refresh it, and manual extraction became a permanent operational bottleneck.
 
 Our task was to automate the extraction of over 30 complex data entities per record. These weren't simple strings — they were nested structures involving normalization, classification, interpretation, and multi-layered policy requirements.
 
 ## Phase 1: Standard Extraction
 
-Using standard extraction patterns, we achieved a field-level accuracy of **74%** against corrected ground truth. The challenge wasn't just accuracy — it was **recall**. The system would often miss information hidden in non-standard website structures or deep within unstructured text.
+Using standard extraction patterns, we achieved a field-level accuracy of **74%** against corrected ground truth. The challenge wasn't just accuracy — it was **recall**. The system would often miss information hidden in non-standard structures or deep within unstructured text.
 
 ## The Pivot: Research-First Architecture
 

@@ -1,11 +1,11 @@
 ---
 title: Case Studies
-description: Real-world AI projects in document extraction, RAG evaluation, medical intelligence, and AI-powered recommendations.
+description: Real-world AI projects in document extraction, RAG evaluation, medical intelligence — plus hobby builds and experiments.
 ---
 
-# Featured Projects
+# Case Studies
 
-Selected projects showcasing production-grade AI systems — from complex document extraction to evaluation infrastructure and AI-powered recommendations.
+Selected projects showcasing production-grade AI systems — from complex document extraction to evaluation infrastructure.
 
 <div class="grid cards" markdown>
 
@@ -27,10 +27,26 @@ Selected projects showcasing production-grade AI systems — from complex docume
 
     Production-grade extraction and evaluation system for clinical lab results and doctor reports. Handling real-world document complexity: inconsistent formats, handwriting, multi-page reports.
 
+</div>
+
+---
+
+# Hobby Projects
+
+Side projects, experiments, and tools built for fun or personal use.
+
+<div class="grid cards" markdown>
+
 -   [AI Shop Assistant — Concept Demo](projects/project-4.md)
 
     ---
 
-    A 2-hour prototype demonstrating AI-powered product recommendations — from natural language input to explainable results with feedback loops. Bridging the gap from demo to production.
+    A 2-hour prototype demonstrating AI-powered product recommendations — from natural language input to explainable results with feedback loops.
+
+-   [Trivi — Side-Brain for Trivial Tasks](projects/project-5.md)
+
+    ---
+
+    A tiny 20KB PWA that removes friction from quick lookups — instant translations to multiple languages, explanations, bash commands, and direct answers. Open source.
 
 </div>

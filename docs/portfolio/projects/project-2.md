@@ -33,7 +33,7 @@ I built a systematic measurement layer designed for production reliability:
 
 - **Trustworthy metrics** — teams can now confidently assess whether changes improve search quality
 - **Automated regression testing** — quality is verified in CI/CD, not manually after deployment
-- **Cost-efficient evaluation** — OSS models as judges reduced ongoing evaluation costs significantly
+- **Cost-efficient evaluation** — OSS models as judges reduced ongoing evaluation costs 
 - **Repeatable framework** — the evaluation infrastructure scales as the search system evolves
 
 ## Tech Stack

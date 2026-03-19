@@ -15,11 +15,11 @@ description: Production-grade extraction and evaluation system for clinical lab 
     - Clinical lab result extraction from heterogeneous document formats
     - Doctor report parsing with complex medical terminology
     - Evaluation framework for medical-grade accuracy requirements
-    - Handling real-world document challenges: handwriting, multi-page, inconsistent layouts
+    - Handling real-world document challenges: synonyms, acronyms, multi-page, inconsistent layouts
 
 ## Challenge
 
-Medical documents are among the hardest to process automatically. Clinical lab results and doctor reports come in wildly inconsistent formats — different labs, different templates, handwritten annotations, multi-page reports with scattered data points. The accuracy requirements are exceptionally high because downstream decisions affect patient care.
+Medical documents are among the hardest to process automatically. Clinical lab results and doctor reports come in wildly inconsistent formats — different labs, different templates, multi-page reports with scattered data points. The accuracy requirements are exceptionally high because downstream decisions affect patient care.
 
 ## Approach
 
@@ -28,7 +28,7 @@ Building a production-grade system that handles the full complexity of real medi
 - **Multi-format ingestion**: Processing lab results and reports across diverse formats and layouts
 - **Medical entity extraction**: Identifying and structuring clinical values, reference ranges, diagnoses, and observations
 - **Evaluation-first design**: Medical-grade accuracy requirements demand rigorous measurement from the start
-- **Edge case handling**: Real-world medical documents include handwriting, stamps, annotations, and non-standard layouts
+- **Edge case handling**: Real-world electronical and scanned medical documents 
 
 ## Current Status
 

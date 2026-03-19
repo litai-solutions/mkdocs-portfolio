@@ -2,86 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://litai-solutions.com/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/services/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/2026/03/13/ai-and-productivity/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
+    </url>
+    <url>
+         <loc>https://litai-solutions.com/blog/2026/03/16/building-trivi-bot/</loc>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/2025/09/10/citations-as-deterministic-anchors/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/2024/11/03/breaking-up-with-jupyter-notebooks/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/2025/07/20/precision-table-stakes-recall-frontier/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/2025/06/15/the-decay-of-manual-excellence/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/portfolio/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/portfolio/projects/project-1/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/portfolio/projects/project-2/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/portfolio/projects/project-3/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/portfolio/projects/project-4/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
+    </url>
+    <url>
+         <loc>https://litai-solutions.com/portfolio/projects/project-5/</loc>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/archive/2026/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/archive/2025/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/archive/2024/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/category/ai-engineering/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/category/engineering-culture/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/category/evaluation/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/category/information-extraction/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
     <url>
          <loc>https://litai-solutions.com/blog/category/data-engineering/</loc>
-         <lastmod>2026-03-13</lastmod>
+         <lastmod>2026-03-16</lastmod>
     </url>
 </urlset>

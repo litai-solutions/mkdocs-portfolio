@@ -12,7 +12,7 @@ slug: the-decay-of-manual-excellence
 
 # The Decay of Manual Excellence
 
-High-quality data is often a point of pride for investment firms. In a recent engagement, the client had built a remarkably reliable database through a rigorous, labor-intensive process where mid-level staff reviewed every entry made by junior analysts. However, even the most meticulous manual process eventually hits a wall: the velocity of information. In the venture capital space, data ages rapidly, and a manual team simply cannot scale their output to keep pace with the market without a linear — and often unsustainable — increase in headcount.
+High-quality data is often a point of pride for any company collecting them. In a recent engagement, the client had built a remarkably reliable database through a rigorous, labor-intensive process where mid-level staff reviewed every entry made by junior analysts. However, even the most meticulous manual process eventually hits a wall: the velocity of information. In the space of e.g. investments, data ages rapidly, and a manual team simply cannot scale their output to keep pace with the market without a linear — and often unsustainable — increase in headcount.
 
 <!-- more -->
 

@@ -11,9 +11,13 @@ slug: ai-and-productivity
 
 # AI and expansion of ambition
 
+![AI and expansion of ambition](images/oroductivity-expansion.png)
+
 I keep noticing this new pattern in how I work, think, and make decisions. Recently, it showed up so clearly that I felt it was worth writing down.
 
 I was trained to think economically about software work. Count your operations, mind your memory, justify your complexity — Big-O thinking does not stay in the algorithms course, it shapes how you approach everything: automate and optimise. Now I keep automation and I learn to drop optimising. I have a vision for how I want to build and evaluate, and for the first time the friction is low enough to actually follow it.
+
+<!-- more -->
 
 During evaluation work I realized I needed much more functionality in our pipeline: API changes, additional outputs, the ability to stop at specific points, freeze variables, continue from there, compare branches. A few good hooks in the right places.
 
