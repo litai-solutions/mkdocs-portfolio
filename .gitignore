@@ -97,3 +97,4 @@ target/
 
 # Temporary working files
 tmp/
+.claude/
