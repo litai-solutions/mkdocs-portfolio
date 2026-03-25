@@ -1,8 +1,21 @@
-/* Sticky header — always visible */
+/* Sticky header — always visible, override Material's JS hide */
 .md-header {
-  position: sticky;
-  top: 0;
+  position: sticky !important;
+  top: 0 !important;
   z-index: 4;
+  transform: none !important;
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+/* Override the tabs bar too */
+.md-tabs {
+  position: sticky !important;
+  top: 48px !important;
+  z-index: 3;
+  transform: none !important;
+  opacity: 1 !important;
+  transition: none !important;
 }
 
 /* Larger logo for better visual balance */

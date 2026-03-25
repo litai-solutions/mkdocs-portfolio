@@ -24,6 +24,7 @@ theme:
     - search.suggest
     - toc.integrate
     - navigation.tabs
+    - navigation.tabs.sticky
     # - navigation.expand  # disabled: caused mobile menu to auto-open Home submenu
     - navigation.sections
     - navigation.instant
