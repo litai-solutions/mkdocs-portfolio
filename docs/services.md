@@ -19,7 +19,7 @@ I design and implement evaluation infrastructure for RAG and extraction systems 
 
 ## :material-phone-outline: Discovery Call (Free)
 
-**What it is**: 0.5-1 hour conversation to understand your evaluation needs.
+**What it is**: 30-60 minute conversation to understand your evaluation needs.
 
 **Best for**:
 
@@ -33,7 +33,7 @@ I design and implement evaluation infrastructure for RAG and extraction systems 
 - Recommend the engagement that creates reliable signal
 - Clear next steps: diagnosis, reality check, or full build
 
-**Timeline**: 1-1.5 hours | **Investment**: Free
+**Timeline**: 30-60 min | **Investment**: Free
 
 [Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
 
