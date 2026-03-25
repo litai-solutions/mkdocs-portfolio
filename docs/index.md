@@ -30,11 +30,20 @@ canonical_url: https://litai-solutions.com
 
 <div class="text-intro-grid" markdown>
 
-# RAG demos look great. Production is where they break.
+<h1 class="hero-headline">RAG demos look great.<br>Production is where they break.</h1>
 
-I build document AI systems that survive production — or diagnose why existing systems fail.
+<p class="hero-subtitle">I build document AI systems that survive production.</p>
 
-Investment firms, legal ops, medical data, enterprise platforms — complex tables, scanned PDFs, entity-heavy contracts, inconsistent structure. If the reliability of your automated systems is mission-critical, that's where I work.
+<div class="hero-bullets" markdown>
+
+- **94% accuracy** across 690 complex entities — zero hallucinations
+- **Full sourceability** — every answer traceable to its document, no black box
+- **LLM-as-judge** aligned with human judgment — evaluation you can trust
+
+</div>
+
+<p class="hero-domains"><strong>Where I work:</strong> Investment firms · Legal ops · Medical data · Enterprise platforms<br>
+Complex tables, scanned PDFs, entity-heavy contracts — when reliability is non-negotiable.</p>
 
 [Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
 
