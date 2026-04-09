@@ -32,7 +32,7 @@ canonical_url: https://litai-solutions.com
 
 <h1 class="hero-headline">Production-ready AI. <span class="hero-headline-sub">From prototype to trusted system.</span></h1>
 
-<p class="hero-subtitle">I help teams turn promising document AI prototypes into systems they can measure, trust, and improve.</p>
+<p class="hero-subtitle">I help teams turn promising AI prototypes into systems they can measure, trust, and improve.</p>
 
 <div class="hero-bullets" markdown>
 
