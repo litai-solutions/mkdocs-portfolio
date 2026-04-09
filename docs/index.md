@@ -1,6 +1,6 @@
 ---
 title: About Me
-description: Production-ready AI for complex documents. I help teams turn promising document AI prototypes into systems they can measure, trust, and improve.
+description: Production-ready AI for complex documents. I help teams turn promising AI prototypes into systems they can measure, trust, and improve.
 keywords: LitAI, Halyna Galanzina, AI production readiness, document AI, AI evaluation, document extraction
 author: Halyna Galanzina
 canonical_url: https://litai-solutions.com
