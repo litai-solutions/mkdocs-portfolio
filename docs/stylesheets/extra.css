@@ -98,6 +98,21 @@
     border: 1px solid #2a2f3e !important;
 }
 
+/* Section headers — calm grey to match hero tone */
+[data-md-color-scheme="default"] .md-content h2 {
+  color: #888;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+}
+
+[data-md-color-scheme="slate"] .md-content h2 {
+  color: #c0c4d0;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+}
+
 /* Blog category pills — sidebar navigation */
 .md-sidebar .md-nav__link[href*="category"] {
     display: inline-block;

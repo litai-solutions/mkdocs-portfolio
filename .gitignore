@@ -104,3 +104,4 @@ drafts/
 
 # Built site (rebuilt by gh-deploy)
 site/
+tmp-reports/

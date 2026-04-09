@@ -1,7 +1,7 @@
 ---
 title: About Me
-description: RAG demos look great. Production is where they break. I build document AI systems that survive it — or diagnose why yours doesn't.
-keywords: LitAI, Halyna Galanzina, RAG evaluation, document extraction, AI reliability
+description: Production-ready AI for complex documents. I help teams turn promising document AI prototypes into systems they can measure, trust, and improve.
+keywords: LitAI, Halyna Galanzina, AI production readiness, document AI, AI evaluation, document extraction
 author: Halyna Galanzina
 canonical_url: https://litai-solutions.com
 ---
@@ -17,7 +17,7 @@ canonical_url: https://litai-solutions.com
     "https://www.linkedin.com/in/halyna-galanzina/",
     "https://github.com/litai-solutions"
   ],
-  "jobTitle": "RAG & Extraction Reliability Specialist",
+  "jobTitle": "AI Production Readiness Specialist",
   "worksFor": {
     "@type": "Organization",
     "name": "LITAI LLC",
@@ -30,32 +30,100 @@ canonical_url: https://litai-solutions.com
 
 <div class="text-intro-grid" markdown>
 
-<h1 class="hero-headline">RAG demos look great.<br>Production is where they break.</h1>
+<h1 class="hero-headline">Production-ready AI. <span class="hero-headline-sub">From prototype to trusted system.</span></h1>
 
-<p class="hero-subtitle">I build document AI systems that survive production.</p>
+<p class="hero-subtitle">I help teams turn promising document AI prototypes into systems they can measure, trust, and improve.</p>
 
 <div class="hero-bullets" markdown>
 
-- **94% accuracy** across 690 complex entities — zero hallucinations
-- **Full sourceability** — every answer traceable to its document, no black box
-- **LLM-as-judge** aligned with human judgment — evaluation you can trust
+- **Build the right benchmark** before you scale
+- **See where the system fails** and why
+- **Validate changes** before they hit production
 
 </div>
 
-<p class="hero-domains"><strong>Where I work:</strong> Investment firms · Legal ops · Medical data · Enterprise platforms<br>
-Complex tables, scanned PDFs, entity-heavy contracts — when reliability is non-negotiable.</p>
+Prototyping with AI is exciting. We have all tried and seen how rewarding it can be. The harder part is knowing what is ready to ship, what is still fragile, and how to improve it without guessing.
 
+I build the evaluation harness around your solution — benchmark, metrics, error analysis, and validation loop — so your team can understand the system, operate it confidently, and extend it without fear.
+
+**Proof from a recent project:** 94% accuracy across 690 complex entities · zero hallucinations · full source traceability
+
+<p class="hero-domains"><strong>For teams working with:</strong> scanned PDFs · complex tables · contracts · entity-heavy workflows · high-stakes document operations</p>
+
+[See recent work :material-arrow-right:](portfolio/index.md){ .md-button }
 [Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
 
 </div>
 
 <div class="profile-image-grid" markdown>
 
-![Halyna Galanzina, RAG & Extraction Reliability Specialist](assets/HG-profile.jpg){ .profile-image alt="Portrait of Halyna Galanzina, RAG & Extraction Reliability Specialist" }
+![Halyna Galanzina, AI Production Readiness Specialist](assets/HG-profile.jpg){ .profile-image alt="Portrait of Halyna Galanzina, AI Production Readiness Specialist" }
 
 </div>
 
 </div>
+
+## Build trust before you scale
+
+Most document AI systems don't fail because nobody can code them. They fail because teams cannot clearly see:
+
+- what "good" looks like for their use case
+- whether the system is actually improving
+- which errors matter most
+- whether a change made things better or just different
+
+That is the gap I close.
+
+I help you put a working measurement and improvement system around your AI solution, so progress becomes visible, experiments become safer, and scaling stops feeling like a leap of faith.
+
+## What you leave with
+
+<div class="grid cards" markdown>
+
+-   :material-target:{ .lg .middle } **A benchmark built around your real documents**
+
+    ---
+
+    The right fields, the right structure, and enough coverage to be decision-useful.
+
+-   :material-chart-bar:{ .lg .middle } **Metrics you can actually operate with**
+
+    ---
+
+    Defined, calibrated, and automated.
+
+-   :material-bug:{ .lg .middle } **Error analysis that points to action**
+
+    ---
+
+    Not just "the model is wrong," but where the failure comes from and what to change next.
+
+-   :material-sync:{ .lg .middle } **A repeatable loop your team can own**
+
+    ---
+
+    Change, test, compare, iterate. Not a black box, not a one-off demo.
+
+</div>
+
+**Curious whether this fits your situation?** Start with a free discovery call. We'll figure out the right approach together.
+
+[Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
+
+## Proof
+
+I work on document AI where reliability is not optional.
+
+- **94% accuracy** across 690 complex entities
+- **Zero hallucinations** in high-precision extraction
+- **Full source traceability** for every answer
+- Experience with scanned PDFs, complex tables, contracts, and entity-heavy documents
+- Background in search, information extraction, and document structure long before LLMs
+
+**Typical use cases:**
+Information extraction from complex documents · Retrieval and answer grounding over enterprise content · Evaluation harnesses for document AI systems · Reliability work before scaling pilots into production · Hardening workflows that currently depend on manual review
+
+[See all case studies :material-arrow-right:](portfolio/index.md)
 
 ## About me
 
@@ -65,7 +133,7 @@ That foundation shapes everything I do today. When I work with modern LLM system
 
 ## My approach
 
-**Build evaluation into the architecture from day one.** I move teams away from "vibe-based" testing and toward quantifiable benchmarks. You gain certainty on exactly where to trust the output before committing to scale. 
+**Build evaluation into the architecture from day one.** I move teams away from "vibe-based" testing and toward quantifiable benchmarks. You gain certainty on exactly where to trust the output before committing to scale.
 
 **Diagnose failure modes.** When production systems break, I perform forensic analysis on the retrieval and extraction pipeline to identify specific failure modes. By focusing on evidence-based fixes and deterministic testing, improvements actually stick. The goal is to move beyond the binary "does it work?" to a clear map of system authority.
 
@@ -78,10 +146,6 @@ That foundation shapes everything I do today. When I work with modern LLM system
 **Medical Document Intelligence (Healthcare, ongoing)**: Building extraction and evaluation system for clinical lab results and doctor reports — handling inconsistent formats and table complexity.
 
 [See all case studies :material-arrow-right:](portfolio/index.md)
-
-## Technical foundation
-
-Information Extraction | RAG Evaluation & Reliability | Document Intelligence | LLM-as-Judge Frameworks | Hybrid Search | Python/FastAPI | Pydantic | Java | Elasticsearch/Lucene
 
 ## Why work with me?
 
@@ -113,14 +177,6 @@ Information Extraction | RAG Evaluation & Reliability | Document Intelligence | 
 
 </div>
 
-<div class="grid cards" style="margin-top: 3rem" markdown>
+**Let's have a virtual coffee together!** Want to see if we're a match? Schedule a free intro call to discuss your AI challenges and explore how we can work together.
 
--   :material-coffee:{ .lg .middle } Let's have a virtual coffee together!
-
-    ---
-
-    Want to see if we're a match? Schedule a free intro call to discuss your AI challenges and explore how we can work together.
-
-    [Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
-
-</div>
+[Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
