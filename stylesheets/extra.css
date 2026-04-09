@@ -1,3 +1,30 @@
+/* Sticky header — always visible, override Material's JS hide */
+.md-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 4;
+  transform: none !important;
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+/* Override the tabs bar too */
+.md-tabs {
+  position: sticky !important;
+  top: 48px !important;
+  z-index: 3;
+  transform: none !important;
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+/* Larger logo for better visual balance */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.8rem;
+  width: auto;
+}
+
 /* Light theme custom colors */
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: #000111;
@@ -71,6 +98,21 @@
     border: 1px solid #2a2f3e !important;
 }
 
+/* Section headers — calm grey to match hero tone */
+[data-md-color-scheme="default"] .md-content h2 {
+  color: #888;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+}
+
+[data-md-color-scheme="slate"] .md-content h2 {
+  color: #c0c4d0;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+}
+
 /* Blog category pills — sidebar navigation */
 .md-sidebar .md-nav__link[href*="category"] {
     display: inline-block;
@@ -91,7 +133,8 @@
 
 [data-md-color-scheme="default"] .md-sidebar .md-nav__link[href*="category"]:hover {
     background-color: #2856f7;
-    color: #fff;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
     border-color: #2856f7;
 }
 
@@ -103,7 +146,8 @@
 
 [data-md-color-scheme="slate"] .md-sidebar .md-nav__link[href*="category"]:hover {
     background-color: #8e92f8;
-    color: #0a0e1a;
+    color: #0a0e1a !important;
+    -webkit-text-fill-color: #0a0e1a;
     border-color: #8e92f8;
 }
 
@@ -138,7 +182,8 @@
 
 [data-md-color-scheme="default"] .md-typeset .md-categories .md-category:hover {
     background-color: #2856f7;
-    color: #fff;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
     border-color: #2856f7;
 }
 
@@ -150,7 +195,8 @@
 
 [data-md-color-scheme="slate"] .md-typeset .md-categories .md-category:hover {
     background-color: #8e92f8;
-    color: #0a0e1a;
+    color: #0a0e1a !important;
+    -webkit-text-fill-color: #0a0e1a;
     border-color: #8e92f8;
 }
 
