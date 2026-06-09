@@ -29,7 +29,7 @@ git remote set-url origin "https://<ORG_PAT>@github.com/litai-solutions/mkdocs-p
 git push
 ```
 
-The same `<ORG_PAT>` also works for `litai-solutions/trivi-bot`. Get it from 1Password under "litai-solutions org PAT".
+The same `<ORG_PAT>` also works for `litai-solutions/trivi-bot`. Keep it in your private notes — wherever you store secrets you can reach from any machine you trust.
 
 ## On a fresh clone (new Mac)
 
