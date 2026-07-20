@@ -58,7 +58,7 @@ I design and implement evaluation infrastructure for RAG and extraction systems 
 - Failure mode taxonomy (where it breaks, how often, severity)
 - Clear "build / don't build / build differently" recommendation
 
-**Timeline**: 2-4 weeks | **Investment**: Starting from EUR 5k
+**Timeline**: 2-4 weeks | **Investment**: Starting from $5k
 
 ---
 
@@ -81,7 +81,7 @@ I design and implement evaluation infrastructure for RAG and extraction systems 
 - Automated regression testing suite (CI/CD ready)
 - Team training and documentation
 
-**Timeline**: 6-8 weeks | **Investment**: Starting from EUR 10k
+**Timeline**: 6-8 weeks | **Investment**: Starting from $15k
 
 ---
 
@@ -104,7 +104,7 @@ I design and implement evaluation infrastructure for RAG and extraction systems 
 - Priority support for quality incidents
 - Guidance on model upgrades (new GPT/Claude versions, OSS models)
 
-**Timeline**: 3-12 month retainer | **Investment**: Starting from EUR 1k/month
+**Timeline**: 3-12 month retainer | **Investment**: Starting from $1k/month
 
 ---
 
