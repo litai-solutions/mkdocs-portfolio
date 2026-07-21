@@ -15,6 +15,9 @@ I design and implement evaluation infrastructure for RAG and extraction systems 
 
 **For RAG**: I diagnose, evaluate, and improve existing systems. I'm telling you if it works, where it breaks, and how to fix it.
 
+!!! note "Where these fit"
+    Engagements range from designing and building the search system itself to evaluating one you already have. The packages below are the evaluation-focused entry points — for a full design-and-build, let's scope it on a discovery call.
+
 ---
 
 ## :material-phone-outline: Discovery Call (Free)

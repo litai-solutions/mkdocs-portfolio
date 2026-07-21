@@ -30,21 +30,21 @@ canonical_url: https://litai-solutions.com
 
 <div class="text-intro-grid" markdown>
 
-<h1 class="hero-headline">Production-ready AI. <span class="hero-headline-sub">From prototype to trusted system.</span></h1>
+<h1 class="hero-headline">Search that works on your hardest documents. <span class="hero-headline-sub">Designed, built, and proven.</span></h1>
 
-<p class="hero-subtitle">I help teams turn promising AI prototypes into systems they can measure, trust, and improve.</p>
+<p class="hero-subtitle">I design and build retrieval systems for large, complex document collections — and the evaluation that proves they're right.</p>
 
 <div class="hero-bullets" markdown>
 
-- **Build the right benchmark** before you scale
-- **See where the system fails** and why
-- **Validate changes** before they hit production
+- **Design retrieval that finds the right document** — not just a plausible one
+- **Build extraction, normalization, and aggregation** for unstructured data and documents
+- **Prove it with benchmarks and error analysis** before you scale
 
 </div>
 
 Prototyping with AI is exciting. We have all tried and seen how rewarding it can be. The harder part is knowing what is ready to ship, what is still fragile, and how to improve it without guessing.
 
-I build the evaluation harness around your solution — benchmark, metrics, error analysis, and validation loop — so your team can understand the system, operate it confidently, and extend it without fear.
+I design and build the search system — ingestion, extraction, retrieval — and the evaluation around it: benchmark, metrics, error analysis, and validation loop. So your team gets a system that works on real documents, and the evidence to trust it, operate it, and extend it without fear.
 
 **Proof from a recent project:** 94% accuracy across 690 complex entities · zero hallucinations · full source traceability
 
@@ -74,11 +74,23 @@ Most document AI systems don't fail because nobody can code them. They fail beca
 
 That is the gap I close.
 
-I help you put a working measurement and improvement system around your AI solution, so progress becomes visible, experiments become safer, and scaling stops feeling like a leap of faith.
+I engineer the retrieval your documents actually need — structure, ranking, and query interpretation tuned to how your content behaves — and wrap it in a working measurement and improvement system, so progress becomes visible, experiments become safer, and scaling stops feeling like a leap of faith.
 
 ## What you leave with
 
 <div class="grid cards" markdown>
+
+-   :material-cog-transfer-outline:{ .lg .middle } **A document pipeline that produces clean, searchable data**
+
+    ---
+
+    Ingestion, extraction, and normalization tuned to how your content actually behaves — not a generic pipeline.
+
+-   :material-magnify:{ .lg .middle } **Hybrid retrieval engineered for your content**
+
+    ---
+
+    Not a copy-paste RAG pipeline — retrieval built from the full toolbox: BM25 and embeddings, a document-as-graph layer, query-intent interpretation, and data modeling matched to your domain.
 
 -   :material-target:{ .lg .middle } **A benchmark built around your real documents**
 
@@ -106,10 +118,6 @@ I help you put a working measurement and improvement system around your AI solut
 
 </div>
 
-**Curious whether this fits your situation?** Start with a free discovery call. We'll figure out the right approach together.
-
-[Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
-
 ## Proof
 
 I work on document AI where reliability is not optional.
@@ -129,7 +137,7 @@ Information extraction from complex documents · Retrieval and answer grounding 
 
 I'm Halyna — I've spent 17 years making search and extraction systems work on real-world documents. Long before LLMs, I was building information extraction pipelines for legal, HR, and government domains, learning what makes retrieval succeed or fail at a fundamental level.
 
-That foundation shapes everything I do today. When I work with modern LLM systems I bring deep understanding of chunking strategies, entity resolution, hybrid search tradeoffs, and document structure analysis. That specialized "under-the-hood" knowledge enables companies to move reliably past the demo phase into high-accuracy production.
+That foundation shapes everything I do today. When I build modern LLM systems I design the chunking, entity resolution, hybrid search, and document structure that decide whether search works at scale. That specialized "under-the-hood" work is what moves companies reliably past the demo phase into high-accuracy production.
 
 ## My approach
 
@@ -137,13 +145,21 @@ That foundation shapes everything I do today. When I work with modern LLM system
 
 **Diagnose failure modes.** When production systems break, I perform forensic analysis on the retrieval and extraction pipeline to identify specific failure modes. By focusing on evidence-based fixes and deterministic testing, improvements actually stick. The goal is to move beyond the binary "does it work?" to a clear map of system authority.
 
+## How I think about search
+
+The principles behind how I design and evaluate retrieval for high-stakes documents — the mechanism, not the slogan.
+
+- **In regulated search, the answer is the wrong output.** Lawyers, doctors, and auditors need ranked, traceable evidence — not a generated paragraph. That reframes the whole architecture. [Read →](method/regulated-search-answer-is-the-wrong-output.md)
+- **The judge does not score. The judge diagnoses.** Two competent LLM graders can disagree by 20+ points on the same answers. Layered evaluation separates retrieval, generation, and stability failures instead of hiding them in one number. [Read →](method/judge-diagnoses-not-scores.md)
+- **Entity types are a competing set.** You can't recognize persons without modeling cities and companies — the same string is all three, and only the contrast disambiguates. [Read →](method/entity-types-are-a-competing-set.md)
+
 ## Recent work
 
 **Investment Data Extraction (VC Fund, 12+ months)**: Automated complex extraction replacing a 3-7 person manual workflow. Built multi-stage LLM architecture achieving **94% accuracy** across 690 complex entities with **zero hallucinations**. System designed to report "not found" rather than invent answers.
 
 **RAG Evaluation Infrastructure (Enterprise Search)**: Built systematic measurement for an enterprise search assistant. Replaced noisy metrics with calibrated LLM-as-a-judge framework and CI/CD regression testing. Transformed ad-hoc testing into repeatable, automated evaluation.
 
-**Medical Document Intelligence (Healthcare, ongoing)**: Building extraction and evaluation system for clinical lab results and doctor reports — handling inconsistent formats and table complexity.
+**Medical Document Intelligence (Healthcare, working demonstrator)**: An OpenSearch-based search solution that turns unsorted patient documents (PDFs, scans, DOCX) into a structured, searchable per-patient index — physicians see cited hit lists, never generated answers.
 
 [See all case studies :material-arrow-right:](portfolio/index.md)
 
@@ -177,6 +193,4 @@ That foundation shapes everything I do today. When I work with modern LLM system
 
 </div>
 
-**Let's have a virtual coffee together!** Want to see if we're a match? Schedule a free intro call to discuss your AI challenges and explore how we can work together.
-
-[Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
+Questions, or want to see if it's a fit? [Get in touch](mailto:halyna@litai-solutions.com).
