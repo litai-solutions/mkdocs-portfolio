@@ -51,6 +51,7 @@ I design and build the search system — ingestion, extraction, retrieval — an
 <p class="hero-domains"><strong>For teams working with:</strong> scanned PDFs · complex tables · contracts · entity-heavy workflows · high-stakes document operations</p>
 
 [See recent work :material-arrow-right:](portfolio/index.md){ .md-button }
+[Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
 
 </div>
 
@@ -116,10 +117,6 @@ I engineer the retrieval your documents actually need — structure, ranking, an
     Change, test, compare, iterate. Not a black box, not a one-off demo.
 
 </div>
-
-**Curious whether this fits your situation?** Start with a free discovery call. We'll figure out the right approach together.
-
-[Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
 
 ## Proof
 

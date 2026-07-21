@@ -53,6 +53,6 @@ A working demonstrator: unsorted patient documents in, a structured, searchable 
 
     Medical document processing requires specialized expertise. Let's discuss your document challenges.
 
-    [Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
+    [Get in touch :material-email-outline:](mailto:halyna@litai-solutions.com)
 
 </div>

@@ -75,6 +75,6 @@ Sole AI engineer. Designed the architecture across both phases, built the extrac
 
     Let's discuss how automated document extraction can work for your data.
 
-    [Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
+    [Get in touch :material-email-outline:](mailto:halyna@litai-solutions.com)
 
 </div>
