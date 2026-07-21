@@ -44,14 +44,13 @@ canonical_url: https://litai-solutions.com
 
 Prototyping with AI is exciting. We have all tried and seen how rewarding it can be. The harder part is knowing what is ready to ship, what is still fragile, and how to improve it without guessing.
 
-I design and build the search system — ingestion, extraction, structure, and retrieval — and the evaluation around it: benchmark, metrics, error analysis, and validation loop. So your team gets a system that works on real documents, and the evidence to trust it, operate it, and extend it without fear.
+I design and build the search system — ingestion, extraction, retrieval — and the evaluation around it: benchmark, metrics, error analysis, and validation loop. So your team gets a system that works on real documents, and the evidence to trust it, operate it, and extend it without fear.
 
 **Proof from a recent project:** 94% accuracy across 690 complex entities · zero hallucinations · full source traceability
 
 <p class="hero-domains"><strong>For teams working with:</strong> scanned PDFs · complex tables · contracts · entity-heavy workflows · high-stakes document operations</p>
 
 [See recent work :material-arrow-right:](portfolio/index.md){ .md-button }
-[Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
 
 </div>
 
@@ -157,15 +156,13 @@ The principles behind how I design and evaluate retrieval for high-stakes docume
 - **The judge does not score. The judge diagnoses.** Two competent LLM graders can disagree by 20+ points on the same answers. Layered evaluation separates retrieval, generation, and stability failures instead of hiding them in one number. [Read →](method/judge-diagnoses-not-scores.md)
 - **Entity types are a competing set.** You can't recognize persons without modeling cities and companies — the same string is all three, and only the contrast disambiguates. [Read →](method/entity-types-are-a-competing-set.md)
 
-[See how I think about search :material-arrow-right:](method/index.md)
-
 ## Recent work
 
 **Investment Data Extraction (VC Fund, 12+ months)**: Automated complex extraction replacing a 3-7 person manual workflow. Built multi-stage LLM architecture achieving **94% accuracy** across 690 complex entities with **zero hallucinations**. System designed to report "not found" rather than invent answers.
 
 **RAG Evaluation Infrastructure (Enterprise Search)**: Built systematic measurement for an enterprise search assistant. Replaced noisy metrics with calibrated LLM-as-a-judge framework and CI/CD regression testing. Transformed ad-hoc testing into repeatable, automated evaluation.
 
-**Medical Document Intelligence (Healthcare, ongoing)**: Building extraction and evaluation system for clinical lab results and doctor reports — handling inconsistent formats and table complexity.
+**Medical Document Intelligence (Healthcare, working demonstrator)**: An OpenSearch-based search solution that turns unsorted patient documents (PDFs, scans, DOCX) into a structured, searchable per-patient index — physicians see cited hit lists, never generated answers.
 
 [See all case studies :material-arrow-right:](portfolio/index.md)
 
@@ -199,6 +196,4 @@ The principles behind how I design and evaluate retrieval for high-stakes docume
 
 </div>
 
-**Let's have a virtual coffee together!** Want to see if we're a match? Schedule a free intro call to discuss your AI challenges and explore how we can work together.
-
-[Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
+Questions, or want to see if it's a fit? [Get in touch](mailto:halyna@litai-solutions.com).
