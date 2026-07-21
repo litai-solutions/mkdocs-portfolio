@@ -17,11 +17,11 @@ description: A citation-first search solution that turns unsorted patient docume
     - A self-growing medical thesaurus for clinical variants, acronyms, and OCR errors
     - Evaluation framework for medical-grade accuracy requirements
 
-Designed and built an OpenSearch-based search solution that turns unsorted patient documents (PDFs, scans, DOCX) into a structured, searchable per-patient index. Built on one firm constraint: physicians see cited hit lists, never generated answers — a retrieval machine with provenance, not an answer generator.
+Designed and built an OpenSearch-based search solution that turns unsorted patient documents (PDFs, scans, DOCX) into a structured, searchable per-patient index. Built on one firm constraint: physicians see cited hit lists, never generated answers: a retrieval machine with provenance, not an answer generator.
 
 ## Challenge
 
-Medical documents are among the hardest to process automatically. Clinical lab results and doctor reports come in wildly inconsistent formats — different labs, different templates, multi-page reports with scattered data points. The accuracy requirements are exceptionally high because downstream decisions affect patient care, and an accountable clinician needs to verify every result against its source.
+Medical documents are among the hardest to process automatically. Clinical lab results and doctor reports come in wildly inconsistent formats: different labs, different templates, multi-page reports with scattered data points. The accuracy requirements are exceptionally high because downstream decisions affect patient care, and an accountable clinician needs to verify every result against its source.
 
 ## Approach
 

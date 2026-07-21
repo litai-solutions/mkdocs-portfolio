@@ -44,7 +44,7 @@ canonical_url: https://litai-solutions.com
 
 Prototyping with AI is exciting. We have all tried and seen how rewarding it can be. The harder part is knowing what is ready to ship, what is still fragile, and how to improve it without guessing.
 
-I design and build the whole search system, from ingestion and extraction to retrieval, and the evaluation around it: benchmark, metrics, error analysis, and validation loop. So your team gets a system that works on real documents, and the evidence to trust it, operate it, and extend it without fear.
+I design and build the whole search system, from ingestion through extraction to retrieval, plus the evaluation around it: benchmark, metrics, error analysis, and validation loop. So your team gets a system that works on real documents, plus the evidence to trust, operate, and extend it without fear.
 
 **Proof from a recent project:** 94% accuracy across 690 complex entities · zero hallucinations · full source traceability
 

@@ -1,11 +1,11 @@
 ---
 title: How I think about search
-description: Problem-level principles behind reliable retrieval in regulated domains — the answer is the wrong output, the judge diagnoses instead of scores, and entity types are a competing set.
+description: Problem-level principles behind reliable retrieval in regulated domains: the answer is the wrong output, the judge diagnoses instead of scores, and entity types are a competing set.
 ---
 
 # How I think about search
 
-Three principles behind how I design and evaluate retrieval systems for high-stakes documents. Not case studies — the way of thinking, with the mechanism shown.
+Three principles behind how I design and evaluate retrieval systems for high-stakes documents. Not case studies: the way of thinking, with the mechanism shown.
 
 <div class="grid cards" markdown>
 
@@ -13,7 +13,7 @@ Three principles behind how I design and evaluate retrieval systems for high-sta
 
     ---
 
-    Why lawyers, doctors, and auditors need ranked, traceable evidence — not a generated paragraph — and how that reframes the whole architecture.
+    Why lawyers, doctors, and auditors need ranked, traceable evidence, not a generated paragraph, and how that reframes the whole architecture.
 
     [Read →](regulated-search-answer-is-the-wrong-output.md)
 
@@ -29,7 +29,7 @@ Three principles behind how I design and evaluate retrieval systems for high-sta
 
     ---
 
-    You can't recognize persons without modeling cities and companies — the same string is all three. A principle from rule-based extraction that decides whether an LLM schema is actually separable.
+    You can't recognize persons without modeling cities and companies: the same string is all three. A principle from rule-based extraction that decides whether an LLM schema is actually separable.
 
     [Read →](entity-types-are-a-competing-set.md)
 

@@ -1,6 +1,6 @@
 ---
 title: RAG Evaluation Infrastructure
-description: Systematic measurement layer for an enterprise search assistant — LLM-as-a-judge framework with CI/CD regression testing.
+description: Systematic measurement layer for an enterprise search assistant: LLM-as-a-judge framework with CI/CD regression testing.
 ---
 
 # RAG Evaluation Infrastructure
@@ -18,7 +18,7 @@ description: Systematic measurement layer for an enterprise search assistant —
 
 ## Challenge
 
-The client had a production RAG-based search assistant but no reliable way to measure whether it was actually working well. Existing metrics were noisy and inconsistent — teams couldn't tell if changes improved or degraded search quality. Without trustworthy evaluation, every deployment was a gamble.
+The client had a production RAG-based search assistant but no reliable way to measure whether it was actually working well. Existing metrics were noisy and inconsistent: teams couldn't tell if changes improved or degraded search quality. Without trustworthy evaluation, every deployment was a gamble.
 
 ## Approach
 
@@ -31,10 +31,10 @@ I built a systematic measurement layer designed for production reliability:
 
 ## Results
 
-- **Trustworthy metrics** — teams can now confidently assess whether changes improve search quality
-- **Automated regression testing** — quality is verified in CI/CD, not manually after deployment
-- **Cost-efficient evaluation** — OSS models as judges reduced ongoing evaluation costs 
-- **Repeatable framework** — the evaluation infrastructure scales as the search system evolves
+- **Trustworthy metrics**: teams can now confidently assess whether changes improve search quality
+- **Automated regression testing**: quality is verified in CI/CD, not manually after deployment
+- **Cost-efficient evaluation**: OSS models as judges reduced ongoing evaluation costs 
+- **Repeatable framework**: the evaluation infrastructure scales as the search system evolves
 
 ## Tech Stack
 
@@ -46,7 +46,7 @@ I built a systematic measurement layer designed for production reliability:
 
 ## My Role
 
-Designed and built the entire evaluation infrastructure — from metric definition and judge calibration to CI/CD integration and production deployment.
+Designed and built the entire evaluation infrastructure, from metric definition and judge calibration to CI/CD integration and production deployment.
 
 <div class="grid cards" style="margin-top: 3rem" markdown>
 

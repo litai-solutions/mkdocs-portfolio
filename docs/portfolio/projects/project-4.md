@@ -1,6 +1,6 @@
 ---
-title: AI Shop Assistant — Concept Demo
-description: A 2-hour prototype showing what's possible when you combine business data with AI — from natural language input to explainable recommendations.
+title: AI Shop Assistant: Concept Demo
+description: A 2-hour prototype showing what's possible when you combine business data with AI, from natural language input to explainable recommendations.
 ---
 
 # AI Shop Assistant: From Raw Data to High-Performance AI
@@ -21,7 +21,7 @@ description: A 2-hour prototype showing what's possible when you combine busines
 
 A functional prototype built in 2 hours to demonstrate what an AI-powered shop assistant could look like for businesses with customer data and product catalogs.
 
-This isn't a finished product. It's a **windshield** — a way to visualize the potential before committing to building the engine.
+This isn't a finished product. It's a **windshield**: a way to visualize the potential before committing to building the engine.
 
 ![AI shop assistant concept demo](../../assets/tea-demo-overview.png)
 
@@ -38,12 +38,12 @@ Businesses who have:
 ## How It Works
 
 ### 1. Customer Input
-Users describe what they're looking for in natural language — voice or text.
+Users describe what they're looking for in natural language: voice or text.
 
 **Example**: *"I'm looking for a green tea with a note of jasmine but not dominating. Not the highest price range."*
 
 ### 2. Intent Extraction
-The system parses the request and extracts structured preferences — not just keywords, but mapped to your specific product taxonomy.
+The system parses the request and extracts structured preferences, not just keywords, but mapped to your specific product taxonomy.
 
 ![Extracted preferences panel](../../assets/tea-demo-preferences.png)
 
@@ -72,15 +72,15 @@ What you see working here took 2 hours to code. What needs to be added for produ
 
 - What happens when customers ask unexpected questions?
 - How do you handle edge cases (out-of-stock, contradictory preferences, niche requests)?
-- How do you iterate systematically — not just "tweak prompts and hope"?
+- How do you iterate systematically, not just "tweak prompts and hope"?
 
 ## My Value
 
 I help you bridge the gap from demo to production:
 
-1. **Design the backend properly** — intent extraction, retrieval, recommendation logic matching your business expertise
-2. **Build evaluation infrastructure** — define what "good" means, create test datasets, measure quality systematically
-3. **Make it production-ready** — map failure modes, systematic improvement until reliable, ongoing monitoring
+1. **Design the backend properly**: intent extraction, retrieval, recommendation logic matching your business expertise
+2. **Build evaluation infrastructure**: define what "good" means, create test datasets, measure quality systematically
+3. **Make it production-ready**: map failure modes, systematic improvement until reliable, ongoing monitoring
 
 <div class="grid cards" style="margin-top: 3rem" markdown>
 
