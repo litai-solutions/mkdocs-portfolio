@@ -30,21 +30,21 @@ canonical_url: https://litai-solutions.com
 
 <div class="text-intro-grid" markdown>
 
-<h1 class="hero-headline">Production-ready AI. <span class="hero-headline-sub">From prototype to trusted system.</span></h1>
+<h1 class="hero-headline">Search that works on your hardest documents. <span class="hero-headline-sub">Designed, built, and proven.</span></h1>
 
-<p class="hero-subtitle">I help teams turn promising AI prototypes into systems they can measure, trust, and improve.</p>
+<p class="hero-subtitle">I design and build retrieval systems for large, complex document collections — and the evaluation that proves they're right.</p>
 
 <div class="hero-bullets" markdown>
 
-- **Build the right benchmark** before you scale
-- **See where the system fails** and why
-- **Validate changes** before they hit production
+- **Design retrieval that finds the right document** — not just a plausible one
+- **Build ingestion, extraction, and structure** for unstructured data and documents
+- **Prove it with benchmarks and error analysis** before you scale
 
 </div>
 
 Prototyping with AI is exciting. We have all tried and seen how rewarding it can be. The harder part is knowing what is ready to ship, what is still fragile, and how to improve it without guessing.
 
-I build the evaluation harness around your solution — benchmark, metrics, error analysis, and validation loop — so your team can understand the system, operate it confidently, and extend it without fear.
+I design and build the search system — ingestion, extraction, structure, and retrieval — and the evaluation around it: benchmark, metrics, error analysis, and validation loop. So your team gets a system that works on real documents, and the evidence to trust it, operate it, and extend it without fear.
 
 **Proof from a recent project:** 94% accuracy across 690 complex entities · zero hallucinations · full source traceability
 
@@ -74,11 +74,17 @@ Most document AI systems don't fail because nobody can code them. They fail beca
 
 That is the gap I close.
 
-I help you put a working measurement and improvement system around your AI solution, so progress becomes visible, experiments become safer, and scaling stops feeling like a leap of faith.
+I design and build the search system, then put a working measurement and improvement system around it — so progress becomes visible, experiments become safer, and scaling stops feeling like a leap of faith.
 
 ## What you leave with
 
 <div class="grid cards" markdown>
+
+-   :material-magnify:{ .lg .middle } **A retrieval system designed for your documents**
+
+    ---
+
+    Ingestion, structure, and search that fit how your content actually behaves — not a generic pipeline.
 
 -   :material-target:{ .lg .middle } **A benchmark built around your real documents**
 
@@ -129,7 +135,7 @@ Information extraction from complex documents · Retrieval and answer grounding 
 
 I'm Halyna — I've spent 17 years making search and extraction systems work on real-world documents. Long before LLMs, I was building information extraction pipelines for legal, HR, and government domains, learning what makes retrieval succeed or fail at a fundamental level.
 
-That foundation shapes everything I do today. When I work with modern LLM systems I bring deep understanding of chunking strategies, entity resolution, hybrid search tradeoffs, and document structure analysis. That specialized "under-the-hood" knowledge enables companies to move reliably past the demo phase into high-accuracy production.
+That foundation shapes everything I do today. When I build modern LLM systems I design the chunking, entity resolution, hybrid search, and document structure that decide whether search works at scale. That specialized "under-the-hood" work is what moves companies reliably past the demo phase into high-accuracy production.
 
 ## My approach
 
