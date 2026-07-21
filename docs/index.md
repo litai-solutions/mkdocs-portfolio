@@ -74,7 +74,7 @@ Most document AI systems don't fail because nobody can code them. They fail beca
 
 That is the gap I close.
 
-I engineer the retrieval your documents actually need — structure, ranking, and query interpretation tuned to how your content behaves — and wrap it in a working measurement and improvement system, so progress becomes visible, experiments become safer, and scaling stops feeling like a leap of faith.
+I engineer the retrieval your documents actually need, tuning its structure, ranking, and query interpretation to how your content behaves, then wrap it in a working measurement and improvement system, so progress becomes visible, experiments become safer, and scaling stops feeling like a leap of faith.
 
 ## What you leave with
 
@@ -84,13 +84,13 @@ I engineer the retrieval your documents actually need — structure, ranking, an
 
     ---
 
-    Ingestion, extraction, and normalization tuned to how your content actually behaves — not a generic pipeline.
+    Ingestion, extraction, and normalization tuned to how your content actually behaves, not a generic pipeline.
 
 -   :material-magnify:{ .lg .middle } **Hybrid retrieval engineered for your content**
 
     ---
 
-    Not a copy-paste RAG pipeline — retrieval built from the full toolbox: BM25 and embeddings, a document-as-graph layer, query-intent interpretation, and data modeling matched to your domain.
+    Not a copy-paste RAG pipeline. Retrieval built from the full toolbox: BM25 and embeddings, a document-as-graph layer, query-intent interpretation, and data modeling matched to your domain.
 
 -   :material-target:{ .lg .middle } **A benchmark built around your real documents**
 
@@ -135,7 +135,7 @@ Information extraction from complex documents · Retrieval and answer grounding 
 
 ## About me
 
-I'm Halyna — I've spent 17 years making search and extraction systems work on real-world documents. Long before LLMs, I was building information extraction pipelines for legal, HR, and government domains, learning what makes retrieval succeed or fail at a fundamental level.
+I'm Halyna. I've spent 17 years making search and extraction systems work on real-world documents. Long before LLMs, I was building information extraction pipelines for legal, HR, and government domains, learning what makes retrieval succeed or fail at a fundamental level.
 
 That foundation shapes everything I do today. When I build modern LLM systems I design the chunking, entity resolution, hybrid search, and document structure that decide whether search works at scale. That specialized "under-the-hood" work is what moves companies reliably past the demo phase into high-accuracy production.
 
@@ -147,11 +147,11 @@ That foundation shapes everything I do today. When I build modern LLM systems I 
 
 ## How I think about search
 
-The principles behind how I design and evaluate retrieval for high-stakes documents — the mechanism, not the slogan.
+The principles behind how I design and evaluate retrieval for high-stakes documents: the mechanism, not the slogan.
 
-- **In regulated search, the answer is the wrong output.** Lawyers, doctors, and auditors need ranked, traceable evidence — not a generated paragraph. That reframes the whole architecture. [Read →](method/regulated-search-answer-is-the-wrong-output.md)
+- **In regulated search, the answer is the wrong output.** Lawyers, doctors, and auditors need ranked, traceable evidence, not a generated paragraph. That reframes the whole architecture. [Read →](method/regulated-search-answer-is-the-wrong-output.md)
 - **The judge does not score. The judge diagnoses.** Two competent LLM graders can disagree by 20+ points on the same answers. Layered evaluation separates retrieval, generation, and stability failures instead of hiding them in one number. [Read →](method/judge-diagnoses-not-scores.md)
-- **Entity types are a competing set.** You can't recognize persons without modeling cities and companies — the same string is all three, and only the contrast disambiguates. [Read →](method/entity-types-are-a-competing-set.md)
+- **Entity types are a competing set.** You can't recognize persons without modeling cities and companies: the same string is all three, and only the contrast disambiguates. [Read →](method/entity-types-are-a-competing-set.md)
 
 ## Recent work
 
@@ -159,7 +159,7 @@ The principles behind how I design and evaluate retrieval for high-stakes docume
 
 **RAG Evaluation Infrastructure (Enterprise Search)**: Built systematic measurement for an enterprise search assistant. Replaced noisy metrics with calibrated LLM-as-a-judge framework and CI/CD regression testing. Transformed ad-hoc testing into repeatable, automated evaluation.
 
-**Medical Document Intelligence (Healthcare, working demonstrator)**: An OpenSearch-based search solution that turns unsorted patient documents (PDFs, scans, DOCX) into a structured, searchable per-patient index — physicians see cited hit lists, never generated answers.
+**Medical Document Intelligence (Healthcare, working demonstrator)**: An OpenSearch-based search solution that turns unsorted patient documents (PDFs, scans, DOCX) into a structured, searchable per-patient index: physicians see cited hit lists, never generated answers.
 
 [See all case studies :material-arrow-right:](portfolio/index.md)
 
@@ -171,7 +171,7 @@ The principles behind how I design and evaluate retrieval for high-stakes docume
 
     ---
 
-    Pre-RAG expertise in enterprise search means I understand why retrieval fails at a fundamental level — not just "call the API and hope."
+    Pre-RAG expertise in enterprise search means I understand why retrieval fails at a fundamental level, not just "call the API and hope."
 
 -   :material-brain:{ .lg .middle } Extraction + Evaluation, Integrated
 
@@ -183,7 +183,7 @@ The principles behind how I design and evaluate retrieval for high-stakes docume
 
     ---
 
-    100% retention rate. My clients stay because I deliver systems that work — and honest assessments when they won't.
+    100% retention rate. My clients stay because I deliver systems that work, and honest assessments when they won't.
 
 -   :material-shield-check:{ .lg .middle } Production-Grade Reliability
 
