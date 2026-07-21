@@ -37,7 +37,7 @@ canonical_url: https://litai-solutions.com
 <div class="hero-bullets" markdown>
 
 - **Design retrieval that finds the right document** — not just a plausible one
-- **Build ingestion, extraction, and structure** for unstructured data and documents
+- **Build extraction, normalization, and aggregation** for unstructured data and documents
 - **Prove it with benchmarks and error analysis** before you scale
 
 </div>
@@ -74,17 +74,23 @@ Most document AI systems don't fail because nobody can code them. They fail beca
 
 That is the gap I close.
 
-I design and build the search system, then put a working measurement and improvement system around it — so progress becomes visible, experiments become safer, and scaling stops feeling like a leap of faith.
+I engineer the retrieval your documents actually need — structure, ranking, and query interpretation tuned to how your content behaves — and wrap it in a working measurement and improvement system, so progress becomes visible, experiments become safer, and scaling stops feeling like a leap of faith.
 
 ## What you leave with
 
 <div class="grid cards" markdown>
 
--   :material-magnify:{ .lg .middle } **A retrieval system designed for your documents**
+-   :material-cog-transfer-outline:{ .lg .middle } **A document pipeline that produces clean, searchable data**
 
     ---
 
-    Ingestion, structure, and search that fit how your content actually behaves — not a generic pipeline.
+    Ingestion, extraction, and normalization tuned to how your content actually behaves — not a generic pipeline.
+
+-   :material-magnify:{ .lg .middle } **Hybrid retrieval engineered for your content**
+
+    ---
+
+    Not a copy-paste RAG pipeline — retrieval built from the full toolbox: BM25 and embeddings, a document-as-graph layer, query-intent interpretation, and data modeling matched to your domain.
 
 -   :material-target:{ .lg .middle } **A benchmark built around your real documents**
 
