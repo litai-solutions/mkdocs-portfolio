@@ -32,11 +32,11 @@ canonical_url: https://litai-solutions.com
 
 <h1 class="hero-headline">Search that works on your hardest documents. <span class="hero-headline-sub">Designed, built, and proven.</span></h1>
 
-<p class="hero-subtitle">I design and build retrieval systems for large, complex document collections — and the evaluation that proves they're right.</p>
+<p class="hero-subtitle">I design and build retrieval systems for large, complex document collections, and the evaluation that proves they're right.</p>
 
 <div class="hero-bullets" markdown>
 
-- **Design retrieval that finds the right document** — not just a plausible one
+- **Design retrieval that finds the right document**, not just a plausible one
 - **Build extraction, normalization, and aggregation** for unstructured data and documents
 - **Prove it with benchmarks and error analysis** before you scale
 
@@ -44,7 +44,7 @@ canonical_url: https://litai-solutions.com
 
 Prototyping with AI is exciting. We have all tried and seen how rewarding it can be. The harder part is knowing what is ready to ship, what is still fragile, and how to improve it without guessing.
 
-I design and build the search system — ingestion, extraction, retrieval — and the evaluation around it: benchmark, metrics, error analysis, and validation loop. So your team gets a system that works on real documents, and the evidence to trust it, operate it, and extend it without fear.
+I design and build the whole search system, from ingestion and extraction to retrieval, and the evaluation around it: benchmark, metrics, error analysis, and validation loop. So your team gets a system that works on real documents, and the evidence to trust it, operate it, and extend it without fear.
 
 **Proof from a recent project:** 94% accuracy across 690 complex entities · zero hallucinations · full source traceability
 
