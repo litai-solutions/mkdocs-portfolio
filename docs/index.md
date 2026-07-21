@@ -143,6 +143,16 @@ That foundation shapes everything I do today. When I build modern LLM systems I 
 
 **Diagnose failure modes.** When production systems break, I perform forensic analysis on the retrieval and extraction pipeline to identify specific failure modes. By focusing on evidence-based fixes and deterministic testing, improvements actually stick. The goal is to move beyond the binary "does it work?" to a clear map of system authority.
 
+## How I think about search
+
+The principles behind how I design and evaluate retrieval for high-stakes documents — the mechanism, not the slogan.
+
+- **In regulated search, the answer is the wrong output.** Lawyers, doctors, and auditors need ranked, traceable evidence — not a generated paragraph. That reframes the whole architecture. [Read →](method/regulated-search-answer-is-the-wrong-output.md)
+- **The judge does not score. The judge diagnoses.** Two competent LLM graders can disagree by 20+ points on the same answers. Layered evaluation separates retrieval, generation, and stability failures instead of hiding them in one number. [Read →](method/judge-diagnoses-not-scores.md)
+- **Entity types are a competing set.** You can't recognize persons without modeling cities and companies — the same string is all three, and only the contrast disambiguates. [Read →](method/entity-types-are-a-competing-set.md)
+
+[See how I think about search :material-arrow-right:](method/index.md)
+
 ## Recent work
 
 **Investment Data Extraction (VC Fund, 12+ months)**: Automated complex extraction replacing a 3-7 person manual workflow. Built multi-stage LLM architecture achieving **94% accuracy** across 690 complex entities with **zero hallucinations**. System designed to report "not found" rather than invent answers.

@@ -6,6 +6,11 @@ nav:
   - Home:
     - About: index.md
   - Services: services.md
+  - Method:
+    - How I think about search: method/index.md
+    - In regulated search, the answer is the wrong output: method/regulated-search-answer-is-the-wrong-output.md
+    - The judge does not score. The judge diagnoses.: method/judge-diagnoses-not-scores.md
+    - Entity types are a competing set: method/entity-types-are-a-competing-set.md
   - Case Studies:
     - Overview: portfolio/index.md
     - Projects:
