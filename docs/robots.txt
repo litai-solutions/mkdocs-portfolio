@@ -1,32 +1,19 @@
 User-agent: *
 Allow: /
 
-# Prevent access to specific file types
+# Source files — no value in the index
 Disallow: /*.md$
 Disallow: /*.yml$
 Disallow: /*.yaml$
 Disallow: /*.json$
 
-# Prevent access to search results
+# Search results pages — infinite URL space, nothing to index
 Disallow: /search/
 Disallow: /search.html
 
-# Prevent access to specific directories (adjust as needed)
-Disallow: /assets/
-Disallow: /javascripts/
-Disallow: /stylesheets/
+# AI crawlers (GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot, CCBot) are
+# intentionally permitted under User-agent: * above. Being retrievable by
+# answer engines is a goal, not a leak. Do not add blocks for them without
+# a decision recorded in Plans/Cassian/DECISIONS.md.
 
-# Add a crawl delay to slow down bots
-Crawl-delay: 5
-
-# Block common scraping tools
-User-agent: scrapy
-Disallow: /
-
-User-agent: wget
-Disallow: /
-
-User-agent: curl
-Disallow: /
-
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://litai-solutions.com/sitemap.xml
