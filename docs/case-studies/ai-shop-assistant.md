@@ -23,7 +23,7 @@ A functional prototype built in 2 hours to demonstrate what an AI-powered shop a
 
 This isn't a finished product. It's a **windshield**: a way to visualize the potential before committing to building the engine.
 
-![AI shop assistant concept demo](../../assets/tea-demo-overview.png)
+![AI shop assistant concept demo](../assets/tea-demo-overview.png)
 
 ## Who This Is For
 
@@ -45,12 +45,12 @@ Users describe what they're looking for in natural language: voice or text.
 ### 2. Intent Extraction
 The system parses the request and extracts structured preferences, not just keywords, but mapped to your specific product taxonomy.
 
-![Extracted preferences panel](../../assets/tea-demo-preferences.png)
+![Extracted preferences panel](../assets/tea-demo-preferences.png)
 
 ### 3. Smart Recommendations + Feedback Loop
 The AI retrieves relevant products and explains **why** each recommendation matches. Like/Dislike/Purchase buttons capture customer responses. In production, this data feeds the evaluation and improvement cycle.
 
-![Recommendation cards with feedback](../../assets/tea-demo-recommendations.png)
+![Recommendation cards with feedback](../assets/tea-demo-recommendations.png)
 
 ## The Gap Between Demo and Production
 

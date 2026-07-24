@@ -31,4 +31,4 @@ The magic isn't the AI — it's the friction removal. The same information was a
 
 Trivi is open source: [github.com/litai-solutions/trivi-bot](https://github.com/litai-solutions/trivi-bot)
 
-You can also see it in more detail on the [project page](../../portfolio/projects/project-5.md).
+You can also see it in more detail on the [project page](../../case-studies/trivi.md).

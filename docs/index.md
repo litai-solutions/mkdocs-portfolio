@@ -50,7 +50,7 @@ I design and build the whole search system, from ingestion through extraction to
 
 <p class="hero-domains"><strong>For teams working with:</strong> scanned PDFs · complex tables · contracts · entity-heavy workflows · high-stakes document operations</p>
 
-[See recent work :material-arrow-right:](portfolio/index.md){ .md-button }
+[See recent work :material-arrow-right:](case-studies/index.md){ .md-button }
 [Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
 
 </div>
@@ -131,7 +131,7 @@ I work on document AI where reliability is not optional.
 **Typical use cases:**
 Information extraction from complex documents · Retrieval and answer grounding over enterprise content · Evaluation harnesses for document AI systems · Reliability work before scaling pilots into production · Hardening workflows that currently depend on manual review
 
-[See all case studies :material-arrow-right:](portfolio/index.md)
+[See all case studies :material-arrow-right:](case-studies/index.md)
 
 ## About me
 
@@ -161,7 +161,7 @@ The principles behind how I design and evaluate retrieval for high-stakes docume
 
 **Medical Document Intelligence (Healthcare, working demonstrator)**: An OpenSearch-based search solution that turns unsorted patient documents (PDFs, scans, DOCX) into a structured, searchable per-patient index: physicians see cited hit lists, never generated answers.
 
-[See all case studies :material-arrow-right:](portfolio/index.md)
+[See all case studies :material-arrow-right:](case-studies/index.md)
 
 ## Why work with me?
 

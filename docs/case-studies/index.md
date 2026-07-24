@@ -1,6 +1,6 @@
 ---
 title: Case Studies
-description: Real-world AI projects in document extraction, RAG evaluation, medical intelligence, plus hobby builds and experiments.
+description: Real-world AI systems in document extraction, RAG evaluation, and medical document intelligence, plus a side project.
 ---
 
 # Case Studies
@@ -9,19 +9,19 @@ Selected projects showcasing production-grade AI systems, from complex document 
 
 <div class="grid cards" markdown>
 
--   [Investment Data Extraction Pipeline](projects/project-1.md)
+-   [Investment Data Extraction Pipeline](investment-data-extraction.md)
 
     ---
 
     Automated extraction replacing a 3-7 person manual workflow for a VC fund. Multi-stage LLM architecture achieving **94% accuracy** across 690 complex entities with **zero hallucinations**.
 
--   [RAG Evaluation Infrastructure](projects/project-2.md)
+-   [RAG Evaluation Infrastructure](rag-evaluation-infrastructure.md)
 
     ---
 
     Systematic measurement layer for an enterprise search assistant. Calibrated LLM-as-a-judge framework with CI/CD regression testing using cost-efficient OSS models.
 
--   [Medical Document Intelligence](projects/project-3.md)
+-   [Medical Document Intelligence](medical-document-intelligence.md)
 
     ---
 
@@ -33,17 +33,11 @@ Selected projects showcasing production-grade AI systems, from complex document 
 
 # Hobby Projects
 
-Side projects, experiments, and tools built for fun or personal use.
+Side projects and tools built for fun or personal use.
 
 <div class="grid cards" markdown>
 
--   [AI Shop Assistant: Concept Demo](projects/project-4.md)
-
-    ---
-
-    A 2-hour prototype demonstrating AI-powered product recommendations, from natural language input to explainable results with feedback loops.
-
--   [Trivi: Side-Brain for Trivial Tasks](projects/project-5.md)
+-   [Trivi: Side-Brain for Trivial Tasks](trivi.md)
 
     ---
 

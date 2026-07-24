@@ -12,14 +12,13 @@ nav:
     - The judge does not score. The judge diagnoses.: method/judge-diagnoses-not-scores.md
     - Entity types are a competing set: method/entity-types-are-a-competing-set.md
   - Case Studies:
-    - Overview: portfolio/index.md
+    - Overview: case-studies/index.md
     - Projects:
-      - portfolio/projects/project-1.md
-      - portfolio/projects/project-2.md
-      - portfolio/projects/project-3.md
+      - case-studies/investment-data-extraction.md
+      - case-studies/rag-evaluation-infrastructure.md
+      - case-studies/medical-document-intelligence.md
     - Hobby Projects:
-      - portfolio/projects/project-4.md
-      - portfolio/projects/project-5.md
+      - case-studies/trivi.md
   - Blog:
     - blog/index.md
 
@@ -77,6 +76,12 @@ extra:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/hero.css
+# AI Shop Assistant is disabled, not deleted. It was a 2-hour concept demo and
+# sat oddly next to multi-month client work. The file stays in the repo; remove
+# the line below to bring it back.
+exclude_docs: |
+  case-studies/ai-shop-assistant.md
+
 plugins:
   - search
   # - social:
@@ -86,6 +91,17 @@ plugins:
       blog_dir: blog
       authors_file: "{blog}/.authors.yml"
       categories: true
+  # Old /portfolio/ URLs. Only project-3 and project-5 were ever indexed by
+  # Google, but redirecting all of them costs nothing and covers links shared
+  # by hand. Remove once GSC shows no impressions on the old paths.
+  - redirects:
+      redirect_maps:
+        portfolio/index.md: case-studies/index.md
+        portfolio/projects/project-1.md: case-studies/investment-data-extraction.md
+        portfolio/projects/project-2.md: case-studies/rag-evaluation-infrastructure.md
+        portfolio/projects/project-3.md: case-studies/medical-document-intelligence.md
+        portfolio/projects/project-4.md: case-studies/index.md
+        portfolio/projects/project-5.md: case-studies/trivi.md
 
 markdown_extensions:
   - attr_list

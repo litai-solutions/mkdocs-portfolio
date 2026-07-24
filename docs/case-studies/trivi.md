@@ -38,13 +38,13 @@ Trivi is a tiny app that lives on your phone or desktop, always one tap away. Yo
 
 No chat threads. No scrolling. No context switching. No accounts.
 
-![Main input screen](../../assets/trivi/main-input.png)
+![Main input screen](../assets/trivi/main-input.png)
 
 ### Translate
 
 Just type any word or phrase. Trivi translates it to **all your languages at once.** I'm bilingual, Ukrainian and German, and when I hit a tricky English expression, I need it in both languages to really get it. Configure your target languages once in Settings, and every lookup just works.
 
-![Translation result](../../assets/trivi/translation-result.png)
+![Translation result](../assets/trivi/translation-result.png)
 
 ### Explain
 
@@ -52,7 +52,7 @@ Type **e** + your question. Get a clear 3-6 sentence explanation. Not a lecture,
 
 `e what is a reverse proxy`
 
-![Explain result](../../assets/trivi/explain-result.png)
+![Explain result](../assets/trivi/explain-result.png)
 
 ### Command
 
@@ -60,7 +60,7 @@ Type **c** + what you need. Get the bash or Python command. Nothing else. Copy i
 
 `c find all files larger than 100mb`
 
-![Command result](../../assets/trivi/command-result.png)
+![Command result](../assets/trivi/command-result.png)
 
 ## Why It Works
 
