@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="LITAI LLC — Document AI, RAG evaluation, and production-grade extraction systems for investment firms, legal ops, and enterprise platforms.">
+        <meta name="description" content="Principles behind reliable retrieval in regulated domains: why ranked evidence beats a generated answer, why the judge diagnoses rather than scores, and why entity types are a competing set.">
       
       
       
@@ -16,7 +16,7 @@
         <link rel="prev" href="../services/">
       
       
-        <link rel="next" href="regulated-search-answer-is-the-wrong-output/">
+        <link rel="next" href="regulated-domains-the-answer-is-not-always-the-best-output/">
       
       
       <link rel="icon" href="../assets/Logo-Icon-1.png">
@@ -208,17 +208,16 @@
   
   
   
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
     
-    
-      <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
-          
   
   Home
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
@@ -341,24 +340,9 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Home
@@ -366,41 +350,7 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
-            <span class="md-nav__icon md-icon"></span>
-            Home
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    About
-    
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -511,11 +461,11 @@
   
   
     <li class="md-nav__item">
-      <a href="regulated-search-answer-is-the-wrong-output/" class="md-nav__link">
+      <a href="regulated-domains-the-answer-is-not-always-the-best-output/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    In regulated search, the answer is the wrong output
+    In regulated domains, the answer is not always the best output
     
   </span>
   
@@ -692,7 +642,7 @@
         
   
   <span class="md-ellipsis">
-    Investment data extraction
+    Investment Data Extraction Pipeline
     
   </span>
   
@@ -714,7 +664,7 @@
         
   
   <span class="md-ellipsis">
-    Rag evaluation infrastructure
+    RAG Evaluation Infrastructure
     
   </span>
   
@@ -807,7 +757,7 @@
         
   
   <span class="md-ellipsis">
-    Trivi
+    Trivi: Side-Brain for Trivial Tasks
     
   </span>
   
@@ -1211,24 +1161,19 @@
 
 
 
-<hr />
-<p>title: How I think about search
-description: Problem-level principles behind reliable retrieval in regulated domains: the answer is the wrong output, the judge diagnoses instead of scores, and entity types are a competing set.</p>
-<hr />
 <h1 id="how-i-think-about-search">How I think about search</h1>
-<p>Three principles behind how I design and evaluate retrieval systems for high-stakes documents. Not case studies: the way of thinking, with the mechanism shown.</p>
 <div class="grid cards">
 <ul>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h7c-.41-.25-.8-.56-1.14-.9-.33-.33-.61-.7-.86-1.1H6V4h7v5h5v1.18c.71.16 1.39.43 2 .82V8zm6.31 16.9c1.33-2.11.69-4.9-1.4-6.22-2.11-1.33-4.91-.68-6.22 1.4-1.34 2.11-.69 4.89 1.4 6.22 1.46.93 3.32.93 4.79.02L22 23.39 23.39 22zm-3.81.1a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5"/></svg></span> <strong>In regulated search, the answer is the wrong output</strong></p>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h7c-.41-.25-.8-.56-1.14-.9-.33-.33-.61-.7-.86-1.1H6V4h7v5h5v1.18c.71.16 1.39.43 2 .82V8zm6.31 16.9c1.33-2.11.69-4.9-1.4-6.22-2.11-1.33-4.91-.68-6.22 1.4-1.34 2.11-.69 4.89 1.4 6.22 1.46.93 3.32.93 4.79.02L22 23.39 23.39 22zm-3.81.1a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5"/></svg></span> <strong>In regulated domains, the answer is not always the best possible output</strong></p>
 <hr />
-<p>Why lawyers, doctors, and auditors need ranked, traceable evidence, not a generated paragraph, and how that reframes the whole architecture.</p>
-<p><a href="regulated-search-answer-is-the-wrong-output/">Read →</a></p>
+<p>Why lawyers, doctors, and auditors need ranked, traceable evidence they can cite and check, and how that reframes the whole architecture.</p>
+<p><a href="regulated-domains-the-answer-is-not-always-the-best-output/">Read →</a></p>
 </li>
 <li>
 <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-7 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1M7 7h10V5h2v14H5V5h2zm.5 6.5L9 12l2 2 4.5-4.5L17 11l-6 6z"/></svg></span> <strong>The judge does not score. The judge diagnoses.</strong></p>
 <hr />
-<p>Two competent LLM graders can disagree by 20+ points on the same answers. A layered evaluation that separates retrieval, generation, and stability failures instead of collapsing them into one number.</p>
+<p>Two competent LLM graders can disagree by 20+ points on the same answers. A layered evaluation that gives retrieval, generation, and stability failures each their own verdict.</p>
 <p><a href="judge-diagnoses-not-scores/">Read →</a></p>
 </li>
 <li>
@@ -1245,6 +1190,9 @@ description: Problem-level principles behind reliable retrieval in regulated dom
 
 
 
+
+  
+  
 
 
 
@@ -1287,13 +1235,13 @@ description: Problem-level principles behind reliable retrieval in regulated dom
         
         
           
-          <a href="regulated-search-answer-is-the-wrong-output/" class="md-footer__link md-footer__link--next" aria-label="Next: In regulated search, the answer is the wrong output">
+          <a href="regulated-domains-the-answer-is-not-always-the-best-output/" class="md-footer__link md-footer__link--next" aria-label="Next: In regulated domains, the answer is not always the best output">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                In regulated search, the answer is the wrong output
+                In regulated domains, the answer is not always the best output
               </div>
             </div>
             <div class="md-footer__button md-icon">
