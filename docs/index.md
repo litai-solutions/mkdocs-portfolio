@@ -36,7 +36,6 @@ canonical_url: https://litai-solutions.com
 
 Prototyping with AI is exciting. We have all tried and seen how rewarding it can be. The harder part is knowing what is ready to ship, what is still fragile, and how to improve it without guessing.
 
-
 <p class="hero-domains"><strong>For teams working with:</strong> scanned PDFs · complex tables · contracts · entity-heavy workflows · high-stakes document operations</p>
 
 [See recent work :material-arrow-right:](case-studies/index.md){ .md-button }
@@ -58,7 +57,7 @@ Prototyping with AI is exciting. We have all tried and seen how rewarding it can
 - Build extraction, normalization, and aggregation for unstructured documents
 - Design retrieval that finds the right document and shows why it ranked there
 - Prove it with benchmarks and error analysis
-- Evaluation goes into the architecture from day one, so you know where to trust the output before you commit.
+- Evaluation goes into the architecture from day one, so you know where to trust the output before you commit
 
 ## What you leave with
 
@@ -91,7 +90,7 @@ Prototyping with AI is exciting. We have all tried and seen how rewarding it can
 
 ## Recent work
 
-**Investment Data Extraction (VC Fund, 12+ months)**: Automated complex extraction replacing manual workflows. Built multi-stage LLM architecture achieving **94% accuracy** across 690 complex entities with **zero hallucinations**. System designed to report "not found" rather than invent answers.
+**Investment Data Extraction (VC Fund, 12+ months)**: Automated extraction that reduced a 19-person data operation to 5. Built multi-stage LLM architecture achieving **94% accuracy** across 690 complex entities with **zero hallucinations**. System designed to report "not found" rather than invent answers.
 
 **RAG Evaluation Infrastructure (Enterprise Search)**: Built systematic measurement for an enterprise search assistant. Replaced generic metrics with a calibrated LLM-as-a-judge framework and CI/CD regression testing.
 
@@ -99,15 +98,23 @@ Prototyping with AI is exciting. We have all tried and seen how rewarding it can
 
 [See all case studies :material-arrow-right:](case-studies/index.md)
 
+<div class="grid cards testimonials" markdown>
+
+-   We run a venture capital market database. We started with 19 people on data collection, management, and QA. Working with Halyna, we automated our core workflows and brought the team down to 5, with better quality and no speed bottleneck. She knows how to orchestrate agents, evaluate what they produce, and build the safeguards that make automation trustworthy.
+
+    **[Anna Scherbak](https://www.linkedin.com/in/anna-scherbak/)**, Head of Product at Unicorn Nest
+
+</div>
+
 ## About me
 
-I'm Halyna. I've spent 17 years making search and extraction systems work on real-world documents. Long before LLMs, I was building information extraction pipelines for legal, HR, and government domains, learning what makes retrieval succeed or fail at a fundamental level. That foundation shapes everything I do today.
+I'm Halyna. I've spent 17 years making search and extraction systems work on real documents. Long before LLMs, I was building information extraction pipelines for legal, HR, and government domains, learning what makes retrieval succeed or fail at a fundamental level.
 
 ## How I think about search
 
 - **In regulated domains, the answer itself is not always the best possible output.** Lawyers, doctors, and auditors need ranked, traceable evidence they can cite and check. That reframes the whole architecture. [Read →](method/regulated-domains-the-answer-is-not-always-the-best-output.md)
 - **The judge does not score. The judge diagnoses.** Two competent LLM graders can disagree by 20+ points on the same answers. Layered evaluation gives retrieval, generation, and stability failures each their own verdict. [Read →](method/judge-diagnoses-not-scores.md)
-- **Entity types are a competing set.** You can't recognize persons without modeling cities and companies: the same string is all three, and only the contrast disambiguates. [Read →](method/entity-types-are-a-competing-set.md)
+- **Entity types are a competing set.** A schema with no `excluded_sectors` field will file a fund's exclusions as investments, and no metric will show it. [Read →](method/entity-types-are-a-competing-set.md)
 
 ---
 

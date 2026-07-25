@@ -7,19 +7,20 @@ description: "Discovery call, extraction and retrieval reality check, evaluation
 
 ## :material-phone-outline: Discovery Call (Free)
 
-**What it is**: 30-60 minute conversation to understand your evaluation needs.
+**What it is**: 30-60 minute conversation about your documents, your search or RAG system, and what "correct" has to mean before it ships.
 
 **Best for**:
 
-- Leaders wanting expert assessment before committing
-- Teams unsure which service tier fits their situation
+- Teams whose retrieval works in a demo and is unproven on the real archive
+- Leaders who need to know whether their problem is retrieval, extraction, or measurement
+- Teams unsure which engagement fits
 
 **What happens**:
 
-- Discuss your AI system and quality concerns
-- Identify evaluation gaps and priorities
-- Recommend the engagement that creates reliable signal
-- Clear next steps: diagnosis, reality check, or full build
+- You describe your documents and where the current system loses them
+- I separate the retrieval problem from the extraction problem, because they fail differently and need different fixes
+- I name the engagement that fits, or say that none of them does
+- Clear next step: reality check, build, or nothing
 
 **Timeline**: 30-60 min | **Investment**: Free
 
@@ -27,47 +28,52 @@ description: "Discovery call, extraction and retrieval reality check, evaluation
 
 ---
 
-## :material-magnify: RAG Reality Check
+## :material-magnify: Search and RAG Reality Check
 
-**What it is**: Evaluate whether your RAG approach will work on real documents before you commit to building.
+**What it is**: A judgment on which retrieval architecture your documents require, and whether the approach you have in mind will hold up on them. The measurement comes with it, so the judgment is checkable.
 
 **Best for**:
 
-- Teams planning RAG systems who need to know if the approach is viable
-- Leaders deciding between RAG approaches (chunking strategies, hybrid search, etc.)
-- Organizations wanting to de-risk AI investment
+- Teams about to build search or RAG who want the architecture decided by the documents
+- Leaders choosing between chunking strategies, hybrid search, or a graph layer
+- Teams whose pilot performs on clean files and loses information on scans, tables, and long contracts
 
 **What you get**:
 
-- Document landscape analysis (types, structure, variability, edge cases)
-- Evaluation set design with representative test documents
-- Custom metrics for your domain and use case
-- LLM-as-judge calibration
-- Failure mode taxonomy (where it breaks, how often, severity)
-- Clear "build / don't build / build differently" recommendation
+- Document landscape analysis: types, structure, variability, and the edge cases that break parsers
+- A retrieval design recommendation with the reasoning shown: BM25 and embeddings, a document-as-graph layer, query-intent interpretation, entity resolution, and where a domain thesaurus earns its cost
+- An evaluation set built from your own documents, with the fields, structure, and coverage named
+- Metrics defined for your domain, and an LLM judge calibrated against a gold set
+- A failure taxonomy: where it breaks, how often, how badly
+- A build / don't build / build differently recommendation
+
+**Scope**: an assessment. Sized to one document collection and one class of query. Implementation is the next engagement.
 
 **Timeline**: 2-4 weeks | **Investment**: Starting from $5k
 
 ---
 
-## :material-hammer-wrench: Evaluation Infrastructure Build
+## :material-hammer-wrench: Retrieval Build with Measurement
 
-**What it is**: Full evaluation framework design and implementation for production confidence.
+**What it is**: I build the retrieval and the measurement together, on one slice of your problem, so what ships has evidence attached to it.
 
 **Best for**:
 
-- Teams committed to production deployment
-- Organizations needing ongoing quality monitoring
-- Engineering leaders wanting safe iteration with regression testing
+- Teams committed to production who want the first slice built to a standard the rest can follow
+- Organizations that need every answer traceable to the source passage it came from
+- Engineering leads who want to change the system and see whether it improved
 
 **What you get**:
 
-- Everything in the RAG Reality Check, plus:
-- Production-ready evaluation harness (code + config)
-- Gold standard dataset with documented success criteria
-- Baseline metrics report and failure taxonomy
-- Automated regression testing suite (CI/CD ready)
-- Team training and documentation
+- Everything in the Search and RAG Reality Check, plus:
+- An ingestion, extraction, and normalization pipeline for your document types, including scans and multi-page tables
+- Hybrid retrieval built to the design the reality check recommended, with ranking you can explain
+- Provenance carried end to end, so every hit links back to its source document and passage
+- A benchmark on your documents, with metrics defined, calibrated, and automated
+- Regression testing wired into CI, so a change that degrades retrieval fails the build
+- Error analysis that names where a failure comes from, and the documentation for your team to run the loop without me
+
+**Scope**: 6-8 weeks covers one document type and one query class, built to production standard, with the measurement that covers them. Further document types extend the engagement.
 
 **Timeline**: 6-8 weeks | **Investment**: Starting from $15k
 
@@ -102,7 +108,7 @@ description: "Discovery call, extraction and retrieval reality check, evaluation
 
     ---
 
-    Start with a free discovery call. We'll figure out the right approach for your situation together.
+    Start with a free discovery call. I'll name the one that fits, or tell you none of them does.
 
     [Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
 

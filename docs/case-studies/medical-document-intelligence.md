@@ -17,20 +17,20 @@ description: A citation-first search solution that turns unsorted patient docume
     - A self-growing medical thesaurus for clinical variants, acronyms, and OCR errors
     - Evaluation framework for medical-grade accuracy requirements
 
-Designed and built an OpenSearch-based search solution that turns unsorted patient documents (PDFs, scans, DOCX) into a structured, searchable per-patient index. Built on one firm constraint: physicians see cited hit lists, never generated answers: a retrieval machine with provenance, not an answer generator.
+Designed and built an OpenSearch-based search solution that turns unsorted patient documents (PDFs, scans, DOCX) into a structured, searchable per-patient index. Built on one firm constraint: physicians see cited hit lists, not the generated answers.
 
 ## Challenge
 
-Medical documents are among the hardest to process automatically. Clinical lab results and doctor reports come in wildly inconsistent formats: different labs, different templates, multi-page reports with scattered data points. The accuracy requirements are exceptionally high because downstream decisions affect patient care, and an accountable clinician needs to verify every result against its source.
+Medical documents are among the hardest to process automatically. Clinical lab results and doctor reports come in inconsistent formats: different labs, different templates, multi-page reports with scattered data points. The accuracy requirements are high because downstream decisions affect patient care, and an accountable clinician needs to verify every result against its source.
 
 ## Approach
 
-A search solution built for the full complexity of real medical documents:
+A search solution built around the document formats that arrive in practice:
 
 - **Bounded-context pipeline**: ingestion, extraction, normalization, indexing, and query rewriting as separate, testable stages, with a provider-agnostic LLM layer
 - **Traceable index**: an OpenSearch index with a per-mention entity graph and source deep links, so every hit traces back to the exact document and passage
 - **Self-growing medical thesaurus**: matches a clinician's query against clinical variants, abbreviations, and OCR errors across the corpus
-- **Evaluation-first design**: golden-standard benchmarks and recall experiments that show where structured-only retrieval misses clinically relevant documents
+- **Evaluation-first design**: gold-standard benchmarks and recall experiments that show where structured-only retrieval misses clinically relevant documents
 
 ## Current Status
 
@@ -51,7 +51,7 @@ A working demonstrator: unsorted patient documents in, a structured, searchable 
 
     ---
 
-    Medical document processing requires specialized expertise. Let's discuss your document challenges.
+    Tell me what your documents look like and where the current process loses them.
 
     [Get in touch :material-email-outline:](mailto:halyna@litai-solutions.com)
 

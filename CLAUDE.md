@@ -28,6 +28,19 @@ Grepping is not a substitute for reading. A flagged line can be the argument
 itself; `docs/blog/posts/AI-and-productivity.md` is the voice reference for what
 earned contrast looks like.
 
+## Local preview — always port 8001
+
+**Never use 8000.** It is frequently occupied by a stale server, and probing it burns time
+and tokens. Serve on **8001**, always, with one command: kill whatever holds the port, then
+start. No diagnosing, no asking, no alternate ports.
+
+```bash
+lsof -ti:8001 | xargs -r kill -9; uv run mkdocs serve -a 127.0.0.1:8001
+```
+
+Run it in the background. If a preview looks out of date, the cause is almost always a stale
+server, so kill and restart before investigating anything else.
+
 ## Repo invariants
 
 - **Never call lestarr a consultant.** She is a **builder architect**. Or name

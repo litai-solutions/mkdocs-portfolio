@@ -14,19 +14,27 @@ description: "Automated extraction of 690+ complex entities from investment docu
 
     - **94% final accuracy** across 690 complex entities (strict matching)
     - **Zero hallucinations**: no unsupported extractions observed in manual review
-    - Replaced a 3-7 person manual workflow (high turnover, scaling bottleneck)
+    - Reduced a 19-person data operation to 5 (collection, management, and QA)
     - Multi-stage LLM architecture with citation-backed, auditable results
     - Phase 1 baseline: 74% → Final: 94% through architectural redesign
 
+<div class="grid cards testimonials" markdown>
+
+-   We run a venture capital market database. We started with 19 people on data collection, management, and QA. Working with Halyna, we automated our core workflows and brought the team down to 5, with better quality and no speed bottleneck. She knows how to orchestrate agents, evaluate what they produce, and build the safeguards that make automation trustworthy.
+
+    **[Anna Scherbak](https://www.linkedin.com/in/anna-scherbak/)**, Head of Product at Unicorn Nest
+
+</div>
+
 ## Challenge
 
-The client's product value was inseparable from the integrity of its database. The original process was a "human-loop" factory: 3 to 7 analysts manually extracting data, with mid-level supervisors reviewing and disputing entries. While this maintained high quality, the model couldn't scale. Data was decaying faster than the team could refresh it, and manual extraction became a permanent operational bottleneck.
+The client's product value was inseparable from the integrity of its database. The original process was a "human-loop" factory of 19 people across collection, management, and QA: 3 to 7 analysts extracting data at any given time, with mid-level supervisors reviewing and disputing entries. While this maintained high quality, the model couldn't scale. Data was decaying faster than the team could refresh it, and manual extraction became a permanent operational bottleneck.
 
-Our task was to automate the extraction of over 30 complex data entities per record. These weren't simple strings. They were nested structures involving normalization, classification, interpretation, and multi-layered policy requirements.
+Our task was to automate the extraction of over 30 complex data entities per record. They were nested structures involving normalization, classification, interpretation, and multi-layered policy requirements.
 
 ## Phase 1: Standard Extraction
 
-Using standard extraction patterns, we achieved a field-level accuracy of **74%** against corrected ground truth. The challenge wasn't just accuracy: it was **recall**. The system would often miss information hidden in non-standard structures or deep within unstructured text.
+Using standard extraction patterns, we achieved a field-level accuracy of **74%** against corrected ground truth. **Recall** was the harder problem. The system would often miss information hidden in non-standard structures or deep within unstructured text.
 
 ## The Pivot: Research-First Architecture
 
@@ -36,16 +44,15 @@ To reach production-grade reliability, we moved away from "one-shot" extraction 
 
 2. **Structured Synthesis**: Only after evidence is gathered is it parsed into strict Pydantic schemas.
 
-This approach prevents the model from being overwhelmed by long contexts or complex site layouts. By separating "finding" from "parsing," we ensured the system didn't lose focus.
+This approach prevents the model from being overwhelmed by long contexts or complex site layouts. Separating "finding" from "parsing" gives each stage one task and a bounded context.
 
 ## Results: Audit-Grade Reliability
 
 We conducted structured evaluation across 30 organizations, evaluating **690 complex entities** under a strict matching rule: if a single nested sub-field or list entry was missing or incorrect, the entire entity was marked as a failure.
 
-- **94% final accuracy**, significantly outperforming the Phase 1 baseline
-- **Zero hallucinations**: The system is designed to report "not found" rather than invent a plausible answer, and it holds this promise
-- **Deterministic validation**: By anchoring every data point to a specific citation, we transformed the database from a collection of claims into a verifiable data asset
-- **Competitive advantage** in data freshness, accuracy, and coverage
+- **94% final accuracy**, up from the 74% Phase 1 baseline
+- **Zero hallucinations**: the system reports "not found" rather than inventing a plausible answer
+- **Deterministic validation**: every data point is anchored to a specific citation, so any value in the database can be traced back to the passage it came from
 
 ### Evaluation Method
 

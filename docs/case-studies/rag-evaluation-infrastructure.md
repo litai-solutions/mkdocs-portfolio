@@ -11,30 +11,30 @@ description: "Systematic measurement layer for an enterprise search assistant: L
 
     **Impact Metrics**:
 
-    - Replaced noisy, unreliable quality metrics with calibrated measurements
-    - Established CI/CD regression testing for search quality
-    - Reduced evaluation costs using open-source models as judges
-    - Created a repeatable framework for ongoing quality monitoring
+    - Replaced generic quality metrics with calibrated measurements, such as answer accuracy, retrieval accuracy, and stability
+    - CI/CD regression testing for search quality on every deployment
+    - Open-source models in the judge role, cutting the cost per evaluation run
+    - A documented framework the team runs for ongoing quality monitoring
 
 ## Challenge
 
-The client had a production RAG-based search assistant but no reliable way to measure whether it was actually working well. Existing metrics were noisy and inconsistent: teams couldn't tell if changes improved or degraded search quality. Without trustworthy evaluation, every deployment was a gamble.
+The client had a production RAG-based search assistant and no reliable way to measure whether it was working. The same evaluation run twice gave different numbers, so teams couldn't tell if a change improved or degraded search quality. Without trustworthy evaluation, every deployment was still guesswork.
 
 ## Approach
 
 I built a systematic measurement layer designed for production reliability:
 
-- **LLM-as-a-judge framework**: Calibrated evaluation using well-defined rubrics rather than vague quality scores
-- **Cost-efficient architecture**: Used open-source models as judges instead of expensive commercial APIs, without sacrificing evaluation quality
-- **CI/CD integration**: Automated regression testing so search quality was verified on every deployment
-- **Metric calibration**: Replaced noisy signals with measurements that teams could actually trust and act on
+- **LLM-as-a-judge framework**: evaluation against defined rubrics, with the judge calibrated on a labelled reference set
+- **Open-source judges**: OSS models in the judge role, which cut the recurring cost of every evaluation run
+- **CI/CD integration**: automated regression testing, so search quality is verified on every deployment
+- **Metric calibration**: metrics tied to the reference set, so a movement in the number reflects a movement in the system
 
-## Results
+## What the client has now
 
-- **Trustworthy metrics**: teams can now confidently assess whether changes improve search quality
-- **Automated regression testing**: quality is verified in CI/CD, not manually after deployment
-- **Cost-efficient evaluation**: OSS models as judges reduced ongoing evaluation costs 
-- **Repeatable framework**: the evaluation infrastructure scales as the search system evolves
+- A rubric-based judge, calibrated against a labelled reference set
+- A regression suite that runs in CI on every deployment
+- Evaluation runs cheap enough to repeat often, using open-source judges
+- Documented metric definitions, so the same number means the same thing next quarter
 
 ## Tech Stack
 
@@ -54,7 +54,7 @@ Designed and built the entire evaluation infrastructure, from metric definition 
 
     ---
 
-    Evaluation is the foundation of trust in AI systems. Let's talk about building measurement into yours.
+    Tell me what your system does and where you suspect it drifts, and I'll say what measuring it would take.
 
     [Get in touch :material-email-outline:](mailto:halyna@litai-solutions.com)
 

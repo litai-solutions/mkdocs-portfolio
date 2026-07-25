@@ -1,10 +1,9 @@
 ---
 title: How I think about search
-description: "Principles behind reliable retrieval in regulated domains: why ranked evidence beats a generated answer, why the judge diagnoses rather than scores, and why entity types are a competing set."
+description: "Principles behind reliable retrieval in regulated domains: why ranked evidence beats a generated answer, why the judge should return a diagnosis, and why entity types are a competing set."
 ---
 
 # How I think about search
-
 
 <div class="grid cards" markdown>
 
@@ -28,7 +27,7 @@ description: "Principles behind reliable retrieval in regulated domains: why ran
 
     ---
 
-    You can't recognize persons without modeling cities and companies: the same string is all three. A principle from rule-based extraction that decides whether an LLM schema is actually separable.
+    A schema with no field for a fund's excluded sectors will file the exclusions as investments. A principle from rule-based extraction that decides whether an LLM schema is separable.
 
     [Read →](entity-types-are-a-competing-set.md)
 

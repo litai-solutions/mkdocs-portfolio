@@ -26,7 +26,7 @@ What do you do?
 
 - Open a new browser tab, go to Google Translate, type the word, get the answer, switch back. Friction. Context switching.
 - Ask your AI chat. It answers in 3 paragraphs. Now you have to scroll past it to find where you were. Thread polluted.
-- Or, what most of us actually do, **you skip it.** You move on. You tell yourself you'll look it up later. You won't.
+- Or, what most of us do: **you skip it.** You move on. You tell yourself you'll look it up later. You won't.
 
 Every skipped word is a small hole in your understanding. One is fine. Ten in an article? You're reading the surface.
 
@@ -48,7 +48,7 @@ Just type any word or phrase. Trivi translates it to **all your languages at onc
 
 ### Explain
 
-Type **e** + your question. Get a clear 3-6 sentence explanation. Not a lecture, just enough to understand and move on.
+Type **e** + your question. Get a 3-6 sentence explanation, enough to understand and move on.
 
 `e what is a reverse proxy`
 
@@ -64,18 +64,16 @@ Type **c** + what you need. Get the bash or Python command. Nothing else. Copy i
 
 ## Why It Works
 
-The magic isn't the AI. The AI is the same Gemini or ChatGPT you already use.
+The AI is the same Gemini or ChatGPT you already use. What Trivi adds is **friction removal.**
 
-The magic is **friction removal.**
+Opening a translator takes 5-8 seconds of context switching. That's enough for your brain to decide "not worth it." Trivi takes under 1 second: tap the app, type, Enter, done. That tiny difference changes behavior: you look things up.
 
-Opening a translator takes 5-8 seconds of context switching. That's enough for your brain to decide "not worth it." Trivi takes under 1 second: tap the app, type, Enter, done. That tiny difference changes behavior: you actually look things up instead of skipping them.
-
-I noticed it in myself after a week: I was translating words I would have skipped before. My reading comprehension in English texts genuinely improved because I stopped ignoring gaps.
+I noticed it in myself after a week: I was translating words I would have skipped before. My reading comprehension in English texts improved because I stopped ignoring gaps.
 
 ## Under the Hood
 
 - **No accounts.** No sign-up. No data collection.
-- **Your keys, your data.** API keys are stored in your browser only, never through any server.
+- **Your keys, your data.** API keys are stored in your browser only and never sent to a server.
 - **Works offline** (app shell loads from cache; API calls need internet).
 - **Cyrillic keyboard support.** Ukrainian `е` works as `e`, `с` as `c`, no keyboard switching needed.
 - **20KB total.** The whole app is smaller than a single photo.
@@ -83,4 +81,4 @@ I noticed it in myself after a week: I was translating words I would have skippe
 
 ## Expandable
 
-The four built-in modes are just the start. Open Settings and add your own command prefixes with custom prompts: summarize, grammar check, rewrite, define. Your commands, your prompts, your shortcuts.
+Four modes are built in. Open Settings and add your own command prefixes with custom prompts: summarize, grammar check, rewrite, define.

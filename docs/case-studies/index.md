@@ -1,11 +1,9 @@
 ---
 title: Case Studies
-description: Real-world AI systems in document extraction, RAG evaluation, and medical document intelligence, plus a side project.
+description: AI systems in document extraction, RAG evaluation, and medical document intelligence, plus a side project.
 ---
 
 # Case Studies
-
-Selected projects showcasing production-grade AI systems, from complex document extraction to evaluation infrastructure.
 
 <div class="grid cards" markdown>
 
@@ -13,7 +11,7 @@ Selected projects showcasing production-grade AI systems, from complex document 
 
     ---
 
-    Automated extraction replacing a 3-7 person manual workflow for a VC fund. Multi-stage LLM architecture achieving **94% accuracy** across 690 complex entities with **zero hallucinations**.
+    Automated extraction for a VC fund that reduced a 19-person data operation to 5. Multi-stage LLM architecture achieving **94% accuracy** across 690 complex entities with **zero hallucinations**.
 
 -   [RAG Evaluation Infrastructure](rag-evaluation-infrastructure.md)
 
@@ -25,13 +23,13 @@ Selected projects showcasing production-grade AI systems, from complex document 
 
     ---
 
-    Production-grade extraction and evaluation system for clinical lab results and doctor reports. Handling real-world document complexity: inconsistent formats, handwriting, multi-page reports.
+    Extraction and evaluation for clinical lab results and doctor reports. A working demonstrator built for inconsistent formats, scans, and multi-page reports.
 
 </div>
 
 ---
 
-# Hobby Projects
+## Hobby Projects
 
 Side projects and tools built for fun or personal use.
 

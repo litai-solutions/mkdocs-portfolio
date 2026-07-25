@@ -5,19 +5,16 @@ authors:
 categories:
   - AI Engineering
   - Information Extraction
-description: In LLM extraction, precision gets the headlines but recall is the real engineering challenge
+description: In LLM extraction, recall is the real engineering challenge, and a multi-stage architecture is what pushed it above 90%
 slug: precision-table-stakes-recall-frontier
 ---
 
-# Precision is Table Stakes; Recall is the Frontier
+# Precision is table stakes; recall is the frontier
 
-In the discussion around Large Language Models, the fear of hallucinations — incorrect information — often dominates the conversation. Achieving 100% precision is a prerequisite for any financial data system; "no garbage in" is a non-negotiable rule. However, for professional-grade extraction with LLMs, the more difficult challenge is recall. If an LLM encounters a complex website structure or a 50-page legal document, it often loses focus, missing critical details buried in the text.
+Most of the worry around large language models lands on hallucinations, meaning incorrect information. Achieving 100% precision is a prerequisite for any financial data system. According to my evaluations for professional-grade extraction with LLMs, the harder challenge is recall. If an LLM encounters a complex website structure or a 50-page legal document, it misses details buried deep in the text.
 
 <!-- more -->
 
-We addressed this by redesigning the traditional extract-in-one-shot architecture. By splitting the process into multiple stages — first gathering evidence through an LLM-based websearch or scanning, then parsing that evidence into structured models — we pushed recall above 90%. It was still a project where precision had the upper hand, so we decided to stop there. Such multi-stage approach prevents the model from being overwhelmed by long contexts, ensuring that nuanced details, such as specific investment policy requirements, are not left on the table.
+I addressed this by redesigning the traditional extract-in-one-shot architecture. Splitting the process into multiple stages, first gathering evidence through an LLM-based websearch or scanning, then parsing that evidence into structured models, pushed recall above 90%. It was still a project where precision had the upper hand, so I stopped there. The multi-stage approach prevents the model from being overwhelmed by long contexts, so nuanced details, such as specific investment policy requirements, survive the pass.
 
 Without high recall, automation is just a faster way to get an incomplete picture.
-
----
-
