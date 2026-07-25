@@ -22,7 +22,7 @@ description: "Automated extraction of 690+ complex entities from investment docu
 
 -   We run a venture capital market database. We started with 19 people on data collection, management, and QA. Working with Halyna, we automated our core workflows and brought the team down to 5, with better quality and no speed bottleneck. She knows how to orchestrate agents, evaluate what they produce, and build the safeguards that make automation trustworthy.
 
-    **[Anna Scherbak](https://www.linkedin.com/in/anna-scherbak/){target="_blank" rel="noopener"}**, Head of Product at Unicorn Nest
+    **Anna Scherbak**, Head of Product at Unicorn Nest [:fontawesome-brands-linkedin:](https://www.linkedin.com/in/anna-scherbak/){ .testimonial-verify target="_blank" rel="noopener" title="Anna Scherbak on LinkedIn" }
 
 </div>
 
