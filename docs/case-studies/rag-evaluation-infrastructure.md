@@ -48,6 +48,9 @@ I built a systematic measurement layer designed for production reliability:
 
 Designed and built the entire evaluation infrastructure, from metric definition and judge calibration to CI/CD integration and production deployment.
 
+
+The reasoning behind the layered judge is in [The judge does not score. The judge diagnoses.](../method/judge-diagnoses-not-scores.md).
+
 <div class="grid cards" style="margin-top: 3rem" markdown>
 
 -   :material-coffee:{ .lg .middle } Need to measure your RAG system's quality?

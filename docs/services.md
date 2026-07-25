@@ -11,14 +11,14 @@ description: "Discovery call, extraction and retrieval reality check, evaluation
 
 **Best for**:
 
+- Teams designing a search or extraction system to discuss the method and architecture options
 - Teams whose retrieval works in a demo and is unproven on the real archive
 - Leaders who need to know whether their problem is retrieval, extraction, or measurement
-- Teams unsure which engagement fits
 
 **What happens**:
 
-- You describe your documents and where the current system loses them
-- I separate the retrieval problem from the extraction problem, because they fail differently and need different fixes
+- You describe your documents and your use cases
+- We work out which parts are solvable with retrieval, and which need work further upstream in ingestion and extraction
 - I name the engagement that fits, or say that none of them does
 - Clear next step: reality check, build, or nothing
 
@@ -36,7 +36,7 @@ description: "Discovery call, extraction and retrieval reality check, evaluation
 
 - Teams about to build search or RAG who want the architecture decided by the documents
 - Leaders choosing between chunking strategies, hybrid search, or a graph layer
-- Teams whose pilot performs on clean files and loses information on scans, tables, and long contracts
+- Teams whose pilot performs on clean files and loses information on harder cases such as scans, tables, or long contracts
 
 **What you get**:
 
@@ -47,7 +47,9 @@ description: "Discovery call, extraction and retrieval reality check, evaluation
 - A failure taxonomy: where it breaks, how often, how badly
 - A build / don't build / build differently recommendation
 
-**Scope**: an assessment. Sized to one document collection and one class of query. Implementation is the next engagement.
+Model and method results are specific to your documents and to the models available that quarter, so they get measured for each engagement. A comparison run a year ago on someone else's corpus tells you very little about yours.
+
+**Scope**: an assessment, run on a sample of your real documents rather than a whole corpus. Implementation is the next engagement.
 
 **Timeline**: 2-4 weeks | **Investment**: Starting from $5k
 
@@ -73,7 +75,7 @@ description: "Discovery call, extraction and retrieval reality check, evaluation
 - Regression testing wired into CI, so a change that degrades retrieval fails the build
 - Error analysis that names where a failure comes from, and the documentation for your team to run the loop without me
 
-**Scope**: 6-8 weeks covers one document type and one query class, built to production standard, with the measurement that covers them. Further document types extend the engagement.
+**Scope**: 6-8 weeks delivers a working system on your own documents, built to production standard, with the measurement that covers it. That is past a prototype and short of a finished rollout. The estimate assumes a corpus up to roughly 10,000 documents; a larger collection, or one whose formats vary more than the sample suggested, extends the timeline. Scaling out is the phase after this one, and what it takes is one of the things this phase tells you.
 
 **Timeline**: 6-8 weeks | **Investment**: Starting from $15k
 

@@ -18,3 +18,7 @@ This reframing reaches all the way down the architecture:
 - **Embeddings need a second layer beside them.** Vector similarity ranks without explaining: you can't say *why* a document ranked where it did. A hybrid system pairs embeddings with a linguistically-structured layer: an entity graph plus a domain thesaurus that grows as documents arrive, so one query matches every variant, abbreviation, and OCR error of a term. The embeddings give the system semantic reach, and the linguistic layer lets it show its work: this document ranked here because this term resolved to this entity. In a regulated domain that explanation is the deliverable.
 
 I start from what an accountable professional needs to see to trust and verify the result, and I let that decide the pipeline.
+
+---
+
+This principle decides the architecture in [Medical Document Intelligence](../case-studies/medical-document-intelligence.md), where physicians see cited hit lists and never a generated answer.

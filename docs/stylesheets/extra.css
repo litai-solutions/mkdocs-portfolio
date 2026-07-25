@@ -74,11 +74,46 @@
     margin-top: 0 !important;
 }
 
-/* Style the author name and title */
-.grid.cards.testimonials p:nth-child(2) {
-    margin-top: -0.5rem;
+/* The quote itself */
+.grid.cards.testimonials > ul > li > p:first-child {
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+/* Attribution: must read smaller than the quote it belongs to.
+   The old rule set 0.9rem while Material sizes card body text at 0.8rem,
+   so the name came out larger than the testimonial. */
+.grid.cards.testimonials > ul > li > p:nth-child(2) {
+    margin-top: 0.7rem;
     color: var(--md-default-fg-color--light);
-    font-size: 0.9rem;
+    font-size: 0.78rem;
+    line-height: 1.4;
+}
+
+.grid.cards.testimonials > ul > li > p:nth-child(2) strong {
+    font-weight: 600;
+}
+
+.grid.cards.testimonials > ul > li > p:nth-child(2) a {
+    color: var(--md-accent-fg-color);
+}
+
+/* Project Summary callout: brand blue, not Material's default light blue */
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract {
+    border-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .abstract > .admonition-title,
+.md-typeset .abstract > summary {
+    background-color: rgba(40, 86, 247, 0.1);
+    background-color: color-mix(in srgb, var(--md-accent-fg-color) 10%, transparent);
+    border-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .abstract > .admonition-title::before,
+.md-typeset .abstract > summary::before {
+    background-color: var(--md-accent-fg-color);
 }
 
 /* Light grey background for grid cards */

@@ -32,6 +32,26 @@ A search solution built around the document formats that arrive in practice:
 - **Self-growing medical thesaurus**: matches a clinician's query against clinical variants, abbreviations, and OCR errors across the corpus
 - **Evaluation-first design**: gold-standard benchmarks and recall experiments that show where structured-only retrieval misses clinically relevant documents
 
+### What a thesaurus entry has to hold
+
+Two entries, to show the shape. A clinician asking about type 2 diabetes writes one term; the documents contain all of these.
+
+**Diagnosis.** `Type 2 diabetes mellitus` ← `type 2 diabetes`, `T2DM`, `DM2`, `NIDDM`, `adult-onset diabetes`
+
+**Lab value.** `HbA1c` ← `hemoglobin A1c`, `glycated hemoglobin`, `A1C`, `Hb A1c`, `HbAlc`
+
+`NIDDM` was retired as a term years ago and still appears in older records, which a patient history has to span. The last form on the lab line is OCR reading the digit 1 as a lowercase L: a scan that produces `HbAlc` puts that value outside every search for `HbA1c`, with nothing to announce the miss.
+
+The clinical synonyms are what a domain expert would list. The OCR forms are what you get from reading the scanner output, and they carry the same weight.
+
+### Where it is wrong, and why that is tolerable here
+
+A thesaurus that grows from the documents makes mistakes. This one merges concepts that are clinically distinct: kidney disease and renal insufficiency end up under one normal form, though they describe different conditions. That is over-normalization.
+
+Here it costs nothing, for two reasons that only work together. Search is always patient-scoped, so the patient identifier is the first filter applied. And the system is built for recall. A patient with both conditions documented gets both back; a patient with one gets that one. A false neighbour cannot arrive from another patient's record, because those documents were never in scope.
+
+The same merge would be a real defect in a cross-patient cohort query. The design holds because of what this search is for.
+
 ## Current Status
 
 A working demonstrator: unsorted patient documents in, a structured, searchable per-patient index out, with cited hit lists and full source traceability. Ongoing work expands document coverage and improves accuracy across edge cases.
@@ -44,6 +64,9 @@ A working demonstrator: unsorted patient documents in, a structured, searchable 
 - Medical entity recognition, normalization, and self-growing thesaurus
 - Custom evaluation framework
 - On-premise LLM inference
+
+
+The reasoning behind the citation-first design is in [In regulated domains, the answer is not always the best output](../method/regulated-domains-the-answer-is-not-always-the-best-output.md).
 
 <div class="grid cards" style="margin-top: 3rem" markdown>
 

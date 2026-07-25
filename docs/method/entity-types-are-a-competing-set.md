@@ -16,3 +16,7 @@ Clinical text has the same shape. The same condition name arrives as an active d
 So when I design a data model for LLM extraction, I include types I don't even care about, purely so the ones I *do* care about have something to be disambiguated against.
 
 The practical consequence is a property worth naming: **separability**. A separable schema is built so that each ambiguous surface form has somewhere correct to go, which leaves the model choosing between real alternatives. A schema that lists only the fields a stakeholder asked for gives it one slot to pattern-match into, and the measurement downstream inherits that flaw: every metric is computed over labels the schema made unfalsifiable.
+
+---
+
+Separability is what moved [Investment Data Extraction](../case-studies/investment-data-extraction.md) from 74% to 94%: most of the gain came from changing what the schema asked for.

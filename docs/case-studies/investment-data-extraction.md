@@ -22,7 +22,7 @@ description: "Automated extraction of 690+ complex entities from investment docu
 
 -   We run a venture capital market database. We started with 19 people on data collection, management, and QA. Working with Halyna, we automated our core workflows and brought the team down to 5, with better quality and no speed bottleneck. She knows how to orchestrate agents, evaluate what they produce, and build the safeguards that make automation trustworthy.
 
-    **[Anna Scherbak](https://www.linkedin.com/in/anna-scherbak/)**, Head of Product at Unicorn Nest
+    **[Anna Scherbak](https://www.linkedin.com/in/anna-scherbak/){target="_blank" rel="noopener"}**, Head of Product at Unicorn Nest
 
 </div>
 
@@ -34,7 +34,15 @@ Our task was to automate the extraction of over 30 complex data entities per rec
 
 ## Phase 1: Standard Extraction
 
-Using standard extraction patterns, we achieved a field-level accuracy of **74%** against corrected ground truth. **Recall** was the harder problem. The system would often miss information hidden in non-standard structures or deep within unstructured text.
+Using standard extraction patterns, we achieved a field-level accuracy of **74%** against corrected ground truth. **Recall** was the harder problem: the system missed information held in non-standard structures or buried deep in unstructured text, and a precision-first reading of the results would have looked healthy while those misses went uncounted.
+
+Three things moved the number, in order of how much they mattered.
+
+**Two-stage extraction.** Separating evidence-gathering from schema-filling let the first stage do only the finding, with no obligation to produce well-formed output at the same time. That is where the recall came back.
+
+**The data model.** Most of the gain came from changing what the schema asked for. Fields that collapsed several distinct facts into one slot were split, and types that had nothing to be disambiguated against were given competitors.
+
+**Prompt rules, found by reading the reasoning.** Some prompt corrections were necessary, and I found them by reading each model's thinking output. Where the trace showed the model confused by a rule I had written, the rule was the defect and I rewrote it. Rewording prompts without that signal did little.
 
 ## The Pivot: Research-First Architecture
 
@@ -73,6 +81,9 @@ We conducted structured evaluation across 30 organizations, evaluating **690 com
 ## My Role
 
 Sole AI engineer. Designed the architecture across both phases, built the extraction pipeline, created the evaluation framework, identified critical quality issues in the client's existing manual process, and delivered the production-ready system.
+
+
+The principle behind the data-model changes is in [Entity types are a competing set](../method/entity-types-are-a-competing-set.md).
 
 <div class="grid cards" style="margin-top: 3rem" markdown>
 
