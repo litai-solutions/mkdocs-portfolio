@@ -3,12 +3,11 @@ site_description: LITAI LLC — Document AI, RAG evaluation, and production-grad
 site_url: https://litai-solutions.com
 
 nav:
-  - Home:
-    - About: index.md
+  - Home: index.md
   - Services: services.md
   - Method:
     - How I think about search: method/index.md
-    - In regulated search, the answer is the wrong output: method/regulated-search-answer-is-the-wrong-output.md
+    - In regulated domains, the answer is not always the best output: method/regulated-domains-the-answer-is-not-always-the-best-output.md
     - The judge does not score. The judge diagnoses.: method/judge-diagnoses-not-scores.md
     - Entity types are a competing set: method/entity-types-are-a-competing-set.md
   - Case Studies:
@@ -102,6 +101,11 @@ plugins:
         portfolio/projects/project-3.md: case-studies/medical-document-intelligence.md
         portfolio/projects/project-4.md: case-studies/index.md
         portfolio/projects/project-5.md: case-studies/trivi.md
+        # Renamed 2026-07-24: "regulated search" is not an established term, and
+        # the old title's claim ("the answer is the wrong output") overstated it.
+        # The essay was never indexed, so this costs nothing; the redirect only
+        # covers links shared by hand.
+        method/regulated-search-answer-is-the-wrong-output.md: method/regulated-domains-the-answer-is-not-always-the-best-output.md
 
 markdown_extensions:
   - attr_list

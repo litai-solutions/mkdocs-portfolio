@@ -1,22 +1,3 @@
----
-title: Services
-description: RAG evaluation, extraction pipeline builds, and ongoing quality monitoring — with pricing and clear deliverables.
----
-
-# Services
-
-**Your RAG prototype works. Is it ready for production?**
-
-Building RAG and extraction MVPs is fast. Knowing if they'll work in production is hard. Without systematic evaluation we are guessing.
-
-I design and implement evaluation infrastructure for RAG and extraction systems — creating measurable confidence about where your system can be trusted, so you can scale with evidence, not guesswork.
-
-**For extraction**: I build or improve production-ready pipelines with evaluation infrastructure — whether you're starting from scratch or optimizing an existing system.
-
-**For RAG**: I diagnose, evaluate, and improve existing systems. I'm telling you if it works, where it breaks, and how to fix it.
-
-!!! note "Where these fit"
-    Engagements range from designing and building the search system itself to evaluating one you already have. The packages below are the evaluation-focused entry points — for a full design-and-build, let's scope it on a discovery call.
 
 ---
 
@@ -108,18 +89,6 @@ I design and implement evaluation infrastructure for RAG and extraction systems 
 - Guidance on model upgrades (new GPT/Claude versions, OSS models)
 
 **Timeline**: 3-12 month retainer | **Investment**: Starting from $1k/month
-
----
-
-## Two Tracks, Different Standards
-
-| | Information Extraction | RAG & AI Automations |
-|---|---|---|
-| **Success criteria** | 95%+ precision/recall | No critical failures + good UX |
-| **Why different?** | Fully automated, no human review | Human validates answers |
-| **Ground truth** | Clear, measurable | Fuzzy, subjective |
-| **My role** | Build or improve to production accuracy | Diagnose and improve existing systems |
-
 
 ---
 
