@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="How citation-backed extraction transforms probabilistic AI output into auditable, deterministic records">
+        <meta name="description" content="Why I build both instruments: a benchmark that says whether the pipeline can ship, and a citation on every field that lets a user check one value without trusting the aggregate.">
       
       
       
@@ -24,7 +24,7 @@
     
     
       
-        <title>Citations as Deterministic Anchors - LITAI LLC</title>
+        <title>Citations as deterministic anchors - LITAI LLC</title>
       
     
     
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Citations as Deterministic Anchors
+              Citations as deterministic anchors
             
           </span>
         </div>
@@ -831,7 +831,7 @@
         
   
   <span class="md-ellipsis">
-    Blog
+    Notes on extraction, retrieval, and evaluation
     
   </span>
   
@@ -1259,13 +1259,13 @@
 
 
 
-<h1 id="citations-as-deterministic-anchors">Citations as Deterministic Anchors</h1>
-<p>Trust in AI is built on transparency, not just accuracy scores. In our extraction pipelines, we treat every data point as a claim that must be proven. By implementing a system that requires a citation for every one of the several dozens fields we track per topic, we transform a probabilistic AI output into a deterministic, auditable record. This eliminates the "black box" problem and gives users the ability to jump directly to the source of any data point.</p>
+<h1 id="citations-as-deterministic-anchors">Citations as deterministic anchors</h1>
+<p>Trust in AI is built on transparency. Every extracted field carries a citation back to the exact source passage, and the full extraction set is scored against a benchmark. They answer different questions, at different moments. The benchmark answers whether the pipeline is good enough to ship; that is my question, once, before release. The citation answers where a specific number came from; that is the user's question, every day after.</p>
 <!-- more -->
 
-<p>Practical validation becomes much simpler when the system provides its own audit trail. For example, when extracting contact form locations or complex entity names, the system doesn't just return a string of text; it returns the specific URL and context where that information was found. This allowed us to reach over 90%-99% accuracy rate while maintaining a 0% hallucination rate — because the system is designed to report "not found" rather than invent a plausible answer.</p>
-<p>Ultimately, using citations allows for automated evaluation that is actually reliable. We built a custom framework that compares extractions against benchmarks, using citations to resolve disagreements between the old manual data and the new automated results. </p>
-<hr />
+<p>In my extraction pipelines I treat every data point as a claim that must be proven. Each of the several dozen fields I track per topic requires a citation, so a probabilistic output becomes an auditable record. No value has to be taken on faith.</p>
+<p>Validation becomes much simpler when the system provides its own audit trail. When extracting contact form locations or complex entity names, the system returns the specific URL and the surrounding context the value was found in. That is how I reached a 90-99% accuracy rate while maintaining a 0% hallucination rate: the system is designed to report "not found" rather than invent a plausible answer.</p>
+<p>Citations also make automated evaluation reliable. I built a custom framework that compares extractions against benchmarks and uses the citations to resolve disagreements between the old manual data and the new automated results.</p>
 
 
 
@@ -1304,7 +1304,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../../07/20/precision-table-stakes-recall-frontier/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Precision is Table Stakes; Recall is the Frontier">
+          <a href="../../../07/20/precision-table-stakes-recall-frontier/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Precision is table stakes; recall is the frontier">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1314,7 +1314,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Precision is Table Stakes; Recall is the Frontier
+                Precision is table stakes; recall is the frontier
               </div>
             </div>
           </a>

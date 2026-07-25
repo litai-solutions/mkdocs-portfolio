@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Two competent LLM graders can disagree by 20+ points on the same answers. A layered evaluation that separates infrastructure, retrieval, generation, and stability failures, instead of collapsing them into one misleading number.">
+        <meta name="description" content="Two competent LLM graders can disagree by 20+ points on the same answers. A layered evaluation that separates infrastructure, retrieval, generation, and stability failures, so each gets its own verdict.">
       
       
       
@@ -837,7 +837,7 @@
         
   
   <span class="md-ellipsis">
-    Blog
+    Notes on extraction, retrieval, and evaluation
     
   </span>
   
@@ -1162,19 +1162,21 @@
 
 
 <h1 id="the-judge-does-not-score-the-judge-diagnoses">The judge does not score. The judge diagnoses.</h1>
-<p>Here's the number that should worry anyone shipping enterprise search: on the <em>same set of answers</em>, two competent LLM graders can disagree by more than twenty percentage points on how many are "correct." If your quality metric is a single accuracy score from a single judge, you don't know whether you improved the system or just changed the grader.</p>
-<p>Most retrieval evaluation is broken in a specific way: it collapses three different kinds of failure into one number. An answer can be wrong because retrieval missed the source document, because the model wrote badly from a good document, or because the request never completed at all. "62% correct" tells you none of that, and you can't fix what you can't separate.</p>
-<p>The way I build evaluation rests on one decision: <strong>the judge does not produce a score, it produces a diagnosis.</strong> Instead of asking an LLM for a 0–1 rating, I ask it for a structured, fact-level decomposition: which required facts are present, which are missing, which extra facts were introduced, whether the central claim holds. Every aggregate number is <em>derived</em> from those structured verdicts. It is never the input. That means every headline percentage traces down to a specific machine-readable record, the same record the engineer reads to fix the system.</p>
+<p>An answer can be wrong for three unrelated reasons: retrieval never found the source document, the model wrote badly from a document that was right there, or the request never completed at all. Most retrieval evaluation collapses all three into one number. "62% correct" separates none of them, and the engineer reading it still has to guess which layer to open first.</p>
+<p>Judges vary too. Two competent graders will not agree on the same set of answers unless the rubric and the calibration make them, so a single accuracy score from a single uncalibrated judge tells you as much about the grader as about the system.</p>
+<p>The way I build evaluation rests on one decision: <strong>the judge returns a diagnosis.</strong> I ask it for a structured, fact-level decomposition: which required facts are present, which are missing, which extra facts were introduced, whether the central claim holds. Every aggregate number is <em>derived</em> from those structured verdicts, so every headline percentage traces down to a specific machine-readable record, the same record the engineer reads to fix the system.</p>
 <p>From there the measurement becomes layered, and each layer has a different epistemic status:</p>
 <ul>
 <li><strong>Infrastructure</strong>: did the request even complete cleanly? Deterministic. No judge needed.</li>
-<li><strong>Retrieval</strong>: was the correct source document actually in the retrieved set? Deterministic and judge-independent. This is the layer most teams skip, and it's the one that most often explains the failure.</li>
+<li><strong>Retrieval</strong>: was the correct source document actually in the retrieved set? Deterministic and judge-independent. This is the layer that most often explains the failure.</li>
 <li><strong>Answer quality</strong>: the structured, fact-level judge verdict described above.</li>
-<li><strong>Stability</strong>: run the same question three times. A question that's right once and wrong twice is not "67% correct"; it's <em>unstable</em>, and that's a different problem with a different fix. Separating stable-correct from stable-wrong from these "flippers" tells you where the system is reliable versus merely lucky.</li>
+<li><strong>Stability</strong>: run the same question three times. A question that's right once and wrong twice is <em>unstable</em>, which is a different problem with a different fix than a question that fails every time. Separating stable-correct from stable-wrong from these "flippers" tells you where the system is reliable and where it has been lucky.</li>
 <li><strong>Capability ceiling</strong>: best result across runs. The gap between the ceiling and what the system does <em>reliably</em> is your headroom, and it points at exactly where to invest.</li>
 </ul>
-<p>One more thing that helps real evaluation: <strong>audit the benchmark before you trust it.</strong> In practice, a meaningful fraction of "failures" turn out to be defective test questions: no valid source mapping, a reference answer that contradicts the documents, a question the corpus genuinely can't answer. Reporting those as system failures is how teams chase ghosts for weeks. Before any result is believed, the benchmark itself gets audited and versioned.</p>
-<p>None of this is more expensive than a single-number dashboard once it's built. It's just honest about what you actually know, which, in a domain where the search results carry professional and legal weight, is the difference between a demo and a system you can stand behind.</p>
+<p><strong>Audit the benchmark before you trust it.</strong> In one audit, 20% of apparent failures were defective test questions: no valid source mapping, a reference answer that contradicts the documents, a question the corpus can't answer. Twenty percent is at the high end. Up to 10% is a rate I expect to find in any benchmark I did not build myself. Reporting those as system failures is how teams chase ghosts for weeks. Before any result is believed, the benchmark itself gets audited and versioned.</p>
+<p>Once the structured verdicts exist, the layered report costs no more to produce than the single number did.</p>
+<hr />
+<p>This is the evaluation design behind <a href="../../case-studies/rag-evaluation-infrastructure/">RAG Evaluation Infrastructure</a>, where the judge is calibrated against a labelled reference set and runs in CI.</p>
 
 
 

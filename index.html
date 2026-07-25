@@ -908,7 +908,7 @@
         
   
   <span class="md-ellipsis">
-    Blog
+    Notes on extraction, retrieval, and evaluation
     
   </span>
   
@@ -1271,7 +1271,7 @@
 <li>Build extraction, normalization, and aggregation for unstructured documents</li>
 <li>Design retrieval that finds the right document and shows why it ranked there</li>
 <li>Prove it with benchmarks and error analysis</li>
-<li>Evaluation goes into the architecture from day one, so you know where to trust the output before you commit.</li>
+<li>Evaluation goes into the architecture from day one, so you know where to trust the output before you commit</li>
 </ul>
 <h2 id="what-you-leave-with">What you leave with</h2>
 <div class="grid cards">
@@ -1299,17 +1299,25 @@
 </ul>
 </div>
 <h2 id="recent-work">Recent work</h2>
-<p><strong>Investment Data Extraction (VC Fund, 12+ months)</strong>: Automated complex extraction replacing manual workflows. Built multi-stage LLM architecture achieving <strong>94% accuracy</strong> across 690 complex entities with <strong>zero hallucinations</strong>. System designed to report "not found" rather than invent answers.</p>
+<p><strong>Investment Data Extraction (VC Fund, 12+ months)</strong>: Automated extraction that reduced a 19-person data operation to 5. Built multi-stage LLM architecture achieving <strong>94% accuracy</strong> across 690 complex entities with <strong>zero hallucinations</strong>. System designed to report "not found" rather than invent answers.</p>
 <p><strong>RAG Evaluation Infrastructure (Enterprise Search)</strong>: Built systematic measurement for an enterprise search assistant. Replaced generic metrics with a calibrated LLM-as-a-judge framework and CI/CD regression testing.</p>
 <p><strong>Medical Document Intelligence (Healthcare, working demonstrator)</strong>: An OpenSearch-based search solution that turns unsorted patient documents (PDFs, scans, DOCX) into a structured, searchable per-patient index: physicians see cited hit lists, never generated answers.</p>
 <p><a href="case-studies/">See all case studies <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p>
+<div class="grid cards testimonials">
+<ul>
+<li>
+<p>We run a venture capital market database. We started with 19 people on data collection, management, and QA. Working with Halyna, we automated our core workflows and brought the team down to 5, with better quality and no speed bottleneck. She knows how to orchestrate agents, evaluate what they produce, and build the safeguards that make automation trustworthy.</p>
+<p><strong><a href="https://www.linkedin.com/in/anna-scherbak/" rel="noopener" target="_blank">Anna Scherbak</a></strong>, Head of Product at Unicorn Nest</p>
+</li>
+</ul>
+</div>
 <h2 id="about-me">About me</h2>
-<p>I'm Halyna. I've spent 17 years making search and extraction systems work on real-world documents. Long before LLMs, I was building information extraction pipelines for legal, HR, and government domains, learning what makes retrieval succeed or fail at a fundamental level. That foundation shapes everything I do today.</p>
+<p>I'm Halyna. I've spent 17 years making search and extraction systems work on real documents. Long before LLMs, I was building information extraction pipelines for legal, HR, and government domains, learning what makes retrieval succeed or fail at a fundamental level.</p>
 <h2 id="how-i-think-about-search">How I think about search</h2>
 <ul>
 <li><strong>In regulated domains, the answer itself is not always the best possible output.</strong> Lawyers, doctors, and auditors need ranked, traceable evidence they can cite and check. That reframes the whole architecture. <a href="method/regulated-domains-the-answer-is-not-always-the-best-output/">Read →</a></li>
 <li><strong>The judge does not score. The judge diagnoses.</strong> Two competent LLM graders can disagree by 20+ points on the same answers. Layered evaluation gives retrieval, generation, and stability failures each their own verdict. <a href="method/judge-diagnoses-not-scores/">Read →</a></li>
-<li><strong>Entity types are a competing set.</strong> You can't recognize persons without modeling cities and companies: the same string is all three, and only the contrast disambiguates. <a href="method/entity-types-are-a-competing-set/">Read →</a></li>
+<li><strong>Entity types are a competing set.</strong> A schema with no <code>excluded_sectors</code> field will file a fund's exclusions as investments, and no metric will show it. <a href="method/entity-types-are-a-competing-set/">Read →</a></li>
 </ul>
 <hr />
 <p>Questions, or want to see if it's a fit?</p>

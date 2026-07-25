@@ -721,9 +721,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#results" class="md-nav__link">
+  <a href="#what-the-client-has-now" class="md-nav__link">
     <span class="md-ellipsis">
-      Results
+      What the client has now
     </span>
   </a>
   
@@ -921,7 +921,7 @@
         
   
   <span class="md-ellipsis">
-    Blog
+    Notes on extraction, retrieval, and evaluation
     
   </span>
   
@@ -1252,28 +1252,28 @@
 <strong>Industry</strong>: Enterprise Search / Knowledge Management</p>
 <p><strong>Impact Metrics</strong>:</p>
 <ul>
-<li>Replaced noisy, unreliable quality metrics with calibrated measurements</li>
-<li>Established CI/CD regression testing for search quality</li>
-<li>Reduced evaluation costs using open-source models as judges</li>
-<li>Created a repeatable framework for ongoing quality monitoring</li>
+<li>Replaced generic quality metrics with calibrated measurements, such as answer accuracy, retrieval accuracy, and stability</li>
+<li>CI/CD regression testing for search quality on every deployment</li>
+<li>Open-source models in the judge role, cutting the cost per evaluation run</li>
+<li>A documented framework the team runs for ongoing quality monitoring</li>
 </ul>
 </div>
 <h2 id="challenge">Challenge</h2>
-<p>The client had a production RAG-based search assistant but no reliable way to measure whether it was actually working well. Existing metrics were noisy and inconsistent: teams couldn't tell if changes improved or degraded search quality. Without trustworthy evaluation, every deployment was a gamble.</p>
+<p>The client had a production RAG-based search assistant and no reliable way to measure whether it was working. The same evaluation run twice gave different numbers, so teams couldn't tell if a change improved or degraded search quality. Without trustworthy evaluation, every deployment was still guesswork.</p>
 <h2 id="approach">Approach</h2>
 <p>I built a systematic measurement layer designed for production reliability:</p>
 <ul>
-<li><strong>LLM-as-a-judge framework</strong>: Calibrated evaluation using well-defined rubrics rather than vague quality scores</li>
-<li><strong>Cost-efficient architecture</strong>: Used open-source models as judges instead of expensive commercial APIs, without sacrificing evaluation quality</li>
-<li><strong>CI/CD integration</strong>: Automated regression testing so search quality was verified on every deployment</li>
-<li><strong>Metric calibration</strong>: Replaced noisy signals with measurements that teams could actually trust and act on</li>
+<li><strong>LLM-as-a-judge framework</strong>: evaluation against defined rubrics, with the judge calibrated on a labelled reference set</li>
+<li><strong>Open-source judges</strong>: OSS models in the judge role, which cut the recurring cost of every evaluation run</li>
+<li><strong>CI/CD integration</strong>: automated regression testing, so search quality is verified on every deployment</li>
+<li><strong>Metric calibration</strong>: metrics tied to the reference set, so a movement in the number reflects a movement in the system</li>
 </ul>
-<h2 id="results">Results</h2>
+<h2 id="what-the-client-has-now">What the client has now</h2>
 <ul>
-<li><strong>Trustworthy metrics</strong>: teams can now confidently assess whether changes improve search quality</li>
-<li><strong>Automated regression testing</strong>: quality is verified in CI/CD, not manually after deployment</li>
-<li><strong>Cost-efficient evaluation</strong>: OSS models as judges reduced ongoing evaluation costs </li>
-<li><strong>Repeatable framework</strong>: the evaluation infrastructure scales as the search system evolves</li>
+<li>A rubric-based judge, calibrated against a labelled reference set</li>
+<li>A regression suite that runs in CI on every deployment</li>
+<li>Evaluation runs cheap enough to repeat often, using open-source judges</li>
+<li>Documented metric definitions, so the same number means the same thing next quarter</li>
 </ul>
 <h2 id="tech-stack">Tech Stack</h2>
 <ul>
@@ -1285,12 +1285,13 @@
 </ul>
 <h2 id="my-role">My Role</h2>
 <p>Designed and built the entire evaluation infrastructure, from metric definition and judge calibration to CI/CD integration and production deployment.</p>
+<p>The reasoning behind the layered judge is in <a href="../../method/judge-diagnoses-not-scores/">The judge does not score. The judge diagnoses.</a>.</p>
 <div class="grid cards" style="margin-top: 3rem">
 <ul>
 <li>
 <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 21h18v-2H2M20 8h-2V5h2m0-2H4v10a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-3h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Need to measure your RAG system's quality?</p>
 <hr />
-<p>Evaluation is the foundation of trust in AI systems. Let's talk about building measurement into yours.</p>
+<p>Tell me what your system does and where you suspect it drifts, and I'll say what measuring it would take.</p>
 <p><a href="mailto:halyna@litai-solutions.com">Get in touch <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0-8 5-8-5zm0 12H4V8l8 5 8-5z"/></svg></span></a></p>
 </li>
 </ul>

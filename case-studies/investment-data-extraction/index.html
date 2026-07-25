@@ -945,7 +945,7 @@
         
   
   <span class="md-ellipsis">
-    Blog
+    Notes on extraction, retrieval, and evaluation
     
   </span>
   
@@ -1279,16 +1279,28 @@
 <ul>
 <li><strong>94% final accuracy</strong> across 690 complex entities (strict matching)</li>
 <li><strong>Zero hallucinations</strong>: no unsupported extractions observed in manual review</li>
-<li>Replaced a 3-7 person manual workflow (high turnover, scaling bottleneck)</li>
+<li>Reduced a 19-person data operation to 5 (collection, management, and QA)</li>
 <li>Multi-stage LLM architecture with citation-backed, auditable results</li>
 <li>Phase 1 baseline: 74% → Final: 94% through architectural redesign</li>
 </ul>
 </div>
+<div class="grid cards testimonials">
+<ul>
+<li>
+<p>We run a venture capital market database. We started with 19 people on data collection, management, and QA. Working with Halyna, we automated our core workflows and brought the team down to 5, with better quality and no speed bottleneck. She knows how to orchestrate agents, evaluate what they produce, and build the safeguards that make automation trustworthy.</p>
+<p><strong><a href="https://www.linkedin.com/in/anna-scherbak/" rel="noopener" target="_blank">Anna Scherbak</a></strong>, Head of Product at Unicorn Nest</p>
+</li>
+</ul>
+</div>
 <h2 id="challenge">Challenge</h2>
-<p>The client's product value was inseparable from the integrity of its database. The original process was a "human-loop" factory: 3 to 7 analysts manually extracting data, with mid-level supervisors reviewing and disputing entries. While this maintained high quality, the model couldn't scale. Data was decaying faster than the team could refresh it, and manual extraction became a permanent operational bottleneck.</p>
-<p>Our task was to automate the extraction of over 30 complex data entities per record. These weren't simple strings. They were nested structures involving normalization, classification, interpretation, and multi-layered policy requirements.</p>
+<p>The client's product value was inseparable from the integrity of its database. The original process was a "human-loop" factory of 19 people across collection, management, and QA: 3 to 7 analysts extracting data at any given time, with mid-level supervisors reviewing and disputing entries. While this maintained high quality, the model couldn't scale. Data was decaying faster than the team could refresh it, and manual extraction became a permanent operational bottleneck.</p>
+<p>Our task was to automate the extraction of over 30 complex data entities per record. They were nested structures involving normalization, classification, interpretation, and multi-layered policy requirements.</p>
 <h2 id="phase-1-standard-extraction">Phase 1: Standard Extraction</h2>
-<p>Using standard extraction patterns, we achieved a field-level accuracy of <strong>74%</strong> against corrected ground truth. The challenge wasn't just accuracy: it was <strong>recall</strong>. The system would often miss information hidden in non-standard structures or deep within unstructured text.</p>
+<p>Using standard extraction patterns, we achieved a field-level accuracy of <strong>74%</strong> against corrected ground truth. <strong>Recall</strong> was the harder problem: the system missed information held in non-standard structures or buried deep in unstructured text, and a precision-first reading of the results would have looked healthy while those misses went uncounted.</p>
+<p>Three things moved the number, in order of how much they mattered.</p>
+<p><strong>Two-stage extraction.</strong> Separating evidence-gathering from schema-filling let the first stage do only the finding, with no obligation to produce well-formed output at the same time. That is where the recall came back.</p>
+<p><strong>The data model.</strong> Most of the gain came from changing what the schema asked for. Fields that collapsed several distinct facts into one slot were split, and types that had nothing to be disambiguated against were given competitors.</p>
+<p><strong>Prompt rules, found by reading the reasoning.</strong> Some prompt corrections were necessary, and I found them by reading each model's thinking output. Where the trace showed the model confused by a rule I had written, the rule was the defect and I rewrote it. Rewording prompts without that signal did little.</p>
 <h2 id="the-pivot-research-first-architecture">The Pivot: Research-First Architecture</h2>
 <p>To reach production-grade reliability, we moved away from "one-shot" extraction and implemented a multi-stage architecture:</p>
 <ol>
@@ -1299,14 +1311,13 @@
 <p><strong>Structured Synthesis</strong>: Only after evidence is gathered is it parsed into strict Pydantic schemas.</p>
 </li>
 </ol>
-<p>This approach prevents the model from being overwhelmed by long contexts or complex site layouts. By separating "finding" from "parsing," we ensured the system didn't lose focus.</p>
+<p>This approach prevents the model from being overwhelmed by long contexts or complex site layouts. Separating "finding" from "parsing" gives each stage one task and a bounded context.</p>
 <h2 id="results-audit-grade-reliability">Results: Audit-Grade Reliability</h2>
 <p>We conducted structured evaluation across 30 organizations, evaluating <strong>690 complex entities</strong> under a strict matching rule: if a single nested sub-field or list entry was missing or incorrect, the entire entity was marked as a failure.</p>
 <ul>
-<li><strong>94% final accuracy</strong>, significantly outperforming the Phase 1 baseline</li>
-<li><strong>Zero hallucinations</strong>: The system is designed to report "not found" rather than invent a plausible answer, and it holds this promise</li>
-<li><strong>Deterministic validation</strong>: By anchoring every data point to a specific citation, we transformed the database from a collection of claims into a verifiable data asset</li>
-<li><strong>Competitive advantage</strong> in data freshness, accuracy, and coverage</li>
+<li><strong>94% final accuracy</strong>, up from the 74% Phase 1 baseline</li>
+<li><strong>Zero hallucinations</strong>: the system reports "not found" rather than inventing a plausible answer</li>
+<li><strong>Deterministic validation</strong>: every data point is anchored to a specific citation, so any value in the database can be traced back to the passage it came from</li>
 </ul>
 <h3 id="evaluation-method">Evaluation Method</h3>
 <ul>
@@ -1326,6 +1337,7 @@
 </ul>
 <h2 id="my-role">My Role</h2>
 <p>Sole AI engineer. Designed the architecture across both phases, built the extraction pipeline, created the evaluation framework, identified critical quality issues in the client's existing manual process, and delivered the production-ready system.</p>
+<p>The principle behind the data-model changes is in <a href="../../method/entity-types-are-a-competing-set/">Entity types are a competing set</a>.</p>
 <div class="grid cards" style="margin-top: 3rem">
 <ul>
 <li>

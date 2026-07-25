@@ -740,6 +740,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-a-thesaurus-entry-has-to-hold" class="md-nav__link">
+    <span class="md-ellipsis">
+      What a thesaurus entry has to hold
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-it-is-wrong-and-why-that-is-tolerable-here" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where it is wrong, and why that is tolerable here
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -912,7 +936,7 @@
         
   
   <span class="md-ellipsis">
-    Blog
+    Notes on extraction, retrieval, and evaluation
     
   </span>
   
@@ -1250,17 +1274,27 @@
 <li>Evaluation framework for medical-grade accuracy requirements</li>
 </ul>
 </div>
-<p>Designed and built an OpenSearch-based search solution that turns unsorted patient documents (PDFs, scans, DOCX) into a structured, searchable per-patient index. Built on one firm constraint: physicians see cited hit lists, never generated answers: a retrieval machine with provenance, not an answer generator.</p>
+<p>Designed and built an OpenSearch-based search solution that turns unsorted patient documents (PDFs, scans, DOCX) into a structured, searchable per-patient index. Built on one firm constraint: physicians see cited hit lists, not the generated answers.</p>
 <h2 id="challenge">Challenge</h2>
-<p>Medical documents are among the hardest to process automatically. Clinical lab results and doctor reports come in wildly inconsistent formats: different labs, different templates, multi-page reports with scattered data points. The accuracy requirements are exceptionally high because downstream decisions affect patient care, and an accountable clinician needs to verify every result against its source.</p>
+<p>Medical documents are among the hardest to process automatically. Clinical lab results and doctor reports come in inconsistent formats: different labs, different templates, multi-page reports with scattered data points. The accuracy requirements are high because downstream decisions affect patient care, and an accountable clinician needs to verify every result against its source.</p>
 <h2 id="approach">Approach</h2>
-<p>A search solution built for the full complexity of real medical documents:</p>
+<p>A search solution built around the document formats that arrive in practice:</p>
 <ul>
 <li><strong>Bounded-context pipeline</strong>: ingestion, extraction, normalization, indexing, and query rewriting as separate, testable stages, with a provider-agnostic LLM layer</li>
 <li><strong>Traceable index</strong>: an OpenSearch index with a per-mention entity graph and source deep links, so every hit traces back to the exact document and passage</li>
 <li><strong>Self-growing medical thesaurus</strong>: matches a clinician's query against clinical variants, abbreviations, and OCR errors across the corpus</li>
-<li><strong>Evaluation-first design</strong>: golden-standard benchmarks and recall experiments that show where structured-only retrieval misses clinically relevant documents</li>
+<li><strong>Evaluation-first design</strong>: gold-standard benchmarks and recall experiments that show where structured-only retrieval misses clinically relevant documents</li>
 </ul>
+<h3 id="what-a-thesaurus-entry-has-to-hold">What a thesaurus entry has to hold</h3>
+<p>Two entries, to show the shape. A clinician asking about type 2 diabetes writes one term; the documents contain all of these.</p>
+<p><strong>Diagnosis.</strong> <code>Type 2 diabetes mellitus</code> ← <code>type 2 diabetes</code>, <code>T2DM</code>, <code>DM2</code>, <code>NIDDM</code>, <code>adult-onset diabetes</code></p>
+<p><strong>Lab value.</strong> <code>HbA1c</code> ← <code>hemoglobin A1c</code>, <code>glycated hemoglobin</code>, <code>A1C</code>, <code>Hb A1c</code>, <code>HbAlc</code></p>
+<p><code>NIDDM</code> was retired as a term years ago and still appears in older records, which a patient history has to span. The last form on the lab line is OCR reading the digit 1 as a lowercase L: a scan that produces <code>HbAlc</code> puts that value outside every search for <code>HbA1c</code>, with nothing to announce the miss.</p>
+<p>The clinical synonyms are what a domain expert would list. The OCR forms are what you get from reading the scanner output, and they carry the same weight.</p>
+<h3 id="where-it-is-wrong-and-why-that-is-tolerable-here">Where it is wrong, and why that is tolerable here</h3>
+<p>A thesaurus that grows from the documents makes mistakes. This one merges concepts that are clinically distinct: kidney disease and renal insufficiency end up under one normal form, though they describe different conditions. That is over-normalization.</p>
+<p>Here it costs nothing, for two reasons that only work together. Search is always patient-scoped, so the patient identifier is the first filter applied. And the system is built for recall. A patient with both conditions documented gets both back; a patient with one gets that one. A false neighbour cannot arrive from another patient's record, because those documents were never in scope.</p>
+<p>The same merge would be a real defect in a cross-patient cohort query. The design holds because of what this search is for.</p>
 <h2 id="current-status">Current Status</h2>
 <p>A working demonstrator: unsorted patient documents in, a structured, searchable per-patient index out, with cited hit lists and full source traceability. Ongoing work expands document coverage and improves accuracy across edge cases.</p>
 <h2 id="tech-stack">Tech Stack</h2>
@@ -1272,12 +1306,13 @@
 <li>Custom evaluation framework</li>
 <li>On-premise LLM inference</li>
 </ul>
+<p>The reasoning behind the citation-first design is in <a href="../../method/regulated-domains-the-answer-is-not-always-the-best-output/">In regulated domains, the answer is not always the best output</a>.</p>
 <div class="grid cards" style="margin-top: 3rem">
 <ul>
 <li>
 <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 21h18v-2H2M20 8h-2V5h2m0-2H4v10a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-3h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Working with complex medical documents?</p>
 <hr />
-<p>Medical document processing requires specialized expertise. Let's discuss your document challenges.</p>
+<p>Tell me what your documents look like and where the current process loses them.</p>
 <p><a href="mailto:halyna@litai-solutions.com">Get in touch <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0-8 5-8-5zm0 12H4V8l8 5 8-5z"/></svg></span></a></p>
 </li>
 </ul>

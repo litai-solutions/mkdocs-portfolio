@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="LITAI LLC — Document AI, RAG evaluation, and production-grade extraction systems for investment firms, legal ops, and enterprise platforms.">
+        <meta name="description" content="Posts on building search and extraction systems for complex documents, and on measuring whether they work.">
       
       
       
@@ -24,7 +24,7 @@
     
     
       
-        <title>Blog - LITAI LLC</title>
+        <title>Notes on extraction, retrieval, and evaluation - LITAI LLC</title>
       
     
     
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blog
+              Notes on extraction, retrieval, and evaluation
             
           </span>
         </div>
@@ -838,7 +838,7 @@
         
   
   <span class="md-ellipsis">
-    Blog
+    Notes on extraction, retrieval, and evaluation
     
   </span>
   
@@ -1203,9 +1203,9 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="building-trivi-a-side-brain-for-trivial-tasks"><a class="toclink" href="2026/03/16/building-trivi-bot/">Building Trivi: A Side-Brain for Trivial Tasks</a></h2>
+    <h2 id="building-trivi-a-side-brain-for-trivial-tasks"><a class="toclink" href="2026/03/16/building-trivi-bot/">Building Trivi: a side-brain for trivial tasks</a></h2>
 <p>I built Trivi because I kept skipping words.</p>
-<p>Not complicated words — just unfamiliar ones. Terms I half-knew, expressions I'd seen but never pinned down, bash commands I couldn't quite remember. Every time I hit one, the same calculation ran in my head: <em>Is it worth breaking my flow to look this up?</em> The answer was usually no.</p>
+<p>Just unfamiliar ones. Terms I half-knew, expressions I'd seen but never pinned down, bash commands I couldn't quite remember. Every time I hit one, the same calculation ran in my head: <em>Is it worth breaking my flow to look this up?</em> The answer was usually no.</p>
 
     
       <nav class="md-post__action">
@@ -1255,7 +1255,7 @@
     <h2 id="ai-and-expansion-of-ambition"><a class="toclink" href="2026/03/13/ai-and-productivity/">AI and expansion of ambition</a></h2>
 <p><img alt="AI and expansion of ambition" src="images/productivity-expansion.png" /></p>
 <p>I keep noticing this new pattern in how I work, think, and make decisions. Recently, it showed up so clearly that I felt it was worth writing down.</p>
-<p>I was trained to think economically about software work. Count your operations, mind your memory, justify your complexity — Big-O thinking does not stay in the algorithms course, it shapes how you approach everything: automate and optimise. Now I keep automation and I learn to drop optimising. I have a vision for how I want to build and evaluate, and for the first time the friction is low enough to actually follow it.</p>
+<p>I was trained to think economically about software work. Count your operations, mind your memory, justify your complexity. Big-O thinking does not stay in the algorithms course, it shapes how you approach everything: automate and optimize. Now I keep automation and I learn to drop optimizing. I have a vision for how I want to build and evaluate, and for the first time the friction is low enough to actually follow it.</p>
 
     
       <nav class="md-post__action">
@@ -1302,8 +1302,8 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="citations-as-deterministic-anchors"><a class="toclink" href="2025/09/10/citations-as-deterministic-anchors/">Citations as Deterministic Anchors</a></h2>
-<p>Trust in AI is built on transparency, not just accuracy scores. In our extraction pipelines, we treat every data point as a claim that must be proven. By implementing a system that requires a citation for every one of the several dozens fields we track per topic, we transform a probabilistic AI output into a deterministic, auditable record. This eliminates the "black box" problem and gives users the ability to jump directly to the source of any data point.</p>
+    <h2 id="citations-as-deterministic-anchors"><a class="toclink" href="2025/09/10/citations-as-deterministic-anchors/">Citations as deterministic anchors</a></h2>
+<p>Trust in AI is built on transparency. Every extracted field carries a citation back to the exact source passage, and the full extraction set is scored against a benchmark. They answer different questions, at different moments. The benchmark answers whether the pipeline is good enough to ship; that is my question, once, before release. The citation answers where a specific number came from; that is the user's question, every day after.</p>
 
     
       <nav class="md-post__action">
@@ -1350,8 +1350,8 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="precision-is-table-stakes-recall-is-the-frontier"><a class="toclink" href="2025/07/20/precision-table-stakes-recall-frontier/">Precision is Table Stakes; Recall is the Frontier</a></h2>
-<p>In the discussion around Large Language Models, the fear of hallucinations — incorrect information — often dominates the conversation. Achieving 100% precision is a prerequisite for any financial data system; "no garbage in" is a non-negotiable rule. However, for professional-grade extraction with LLMs, the more difficult challenge is recall. If an LLM encounters a complex website structure or a 50-page legal document, it often loses focus, missing critical details buried in the text.</p>
+    <h2 id="precision-is-table-stakes-recall-is-the-frontier"><a class="toclink" href="2025/07/20/precision-table-stakes-recall-frontier/">Precision is table stakes; recall is the frontier</a></h2>
+<p>Most of the worry around large language models lands on hallucinations, meaning incorrect information. Achieving 100% precision is a prerequisite for any financial data system. According to my evaluations for professional-grade extraction with LLMs, the harder challenge is recall. If an LLM encounters a complex website structure or a 50-page legal document, it misses details buried deep in the text.</p>
 
     
       <nav class="md-post__action">
@@ -1399,8 +1399,8 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="the-decay-of-manual-excellence"><a class="toclink" href="2025/06/15/the-decay-of-manual-excellence/">The Decay of Manual Excellence</a></h2>
-<p>High-quality data is often a point of pride for any company collecting them. In a recent engagement, the client had built a remarkably reliable database through a rigorous, labor-intensive process where mid-level staff reviewed every entry made by junior analysts. However, even the most meticulous manual process eventually hits a wall: the velocity of information. In the space of e.g. investments, data ages rapidly, and a manual team simply cannot scale their output to keep pace with the market without a linear — and often unsustainable — increase in headcount.</p>
+    <h2 id="the-decay-of-manual-excellence"><a class="toclink" href="2025/06/15/the-decay-of-manual-excellence/">The decay of manual excellence</a></h2>
+<p>High-quality data is often a point of pride for any company collecting them. In a recent engagement, the client had built a reliable database through a rigorous, labor-intensive process where mid-level staff reviewed every entry made by junior analysts. Even the most careful manual process eventually hits a wall: the velocity of information. In investments, data ages rapidly, and a manual team cannot scale their output to keep pace with the market without a linear increase in headcount.</p>
 
     
       <nav class="md-post__action">
@@ -1447,7 +1447,7 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="breaking-up-with-jupyter-notebooks-how-ai-powered-apps-revitalized-my-workflow"><a class="toclink" href="2024/11/03/breaking-up-with-jupyter-notebooks/">Breaking Up with Jupyter Notebooks: How AI-Powered Apps Revitalized My Workflow</a></h2>
+    <h2 id="breaking-up-with-jupyter-notebooks"><a class="toclink" href="2024/11/03/breaking-up-with-jupyter-notebooks/">Breaking up with Jupyter Notebooks</a></h2>
 <p><img alt="Breaking up with Jupyter Notebooks" src="images/Jypyter-blogpost.jpg" /></p>
 <p>So, Jupyter Notebooks. We had some good times, didn't we?</p>
 <p>Writing code and seeing the results instantly felt great. But over time, the quirks I once found charming became... less so. Navigating between cells to find code? Frustrating. Forget to run a cell, and dependencies laugh in your face. And the workflow... Each function, each step in an experiment, means executing cells manually, at a time. It felt like trying to bake a cake but having to preheat the oven separately for every ingredient.</p>
