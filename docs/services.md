@@ -1,5 +1,9 @@
-
 ---
+title: Extraction and evaluation engagements
+description: "Discovery call, extraction and retrieval reality check, evaluation infrastructure builds, and ongoing quality monitoring, with pricing and deliverables named."
+---
+
+# Services
 
 ## :material-phone-outline: Discovery Call (Free)
 

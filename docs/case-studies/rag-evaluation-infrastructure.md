@@ -1,6 +1,6 @@
 ---
 title: RAG Evaluation Infrastructure
-description: Systematic measurement layer for an enterprise search assistant: LLM-as-a-judge framework with CI/CD regression testing.
+description: "Systematic measurement layer for an enterprise search assistant: LLM-as-a-judge framework with CI/CD regression testing."
 ---
 
 # RAG Evaluation Infrastructure

@@ -1,5 +1,7 @@
 ---
-
+title: How I think about search
+description: "Principles behind reliable retrieval in regulated domains: why ranked evidence beats a generated answer, why the judge diagnoses rather than scores, and why entity types are a competing set."
+---
 
 # How I think about search
 

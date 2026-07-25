@@ -1,6 +1,6 @@
 ---
 title: Investment Data Extraction Pipeline
-description: Automated extraction of 690+ complex entities from investment documents for a VC fund: 94% accuracy, zero hallucinations, multi-stage LLM architecture.
+description: "Automated extraction of 690+ complex entities from investment documents for a VC fund: 94% accuracy, zero hallucinations, multi-stage LLM architecture."
 ---
 
 # Engineering a High-Scale Data Factory for a Data Intelligence Startup

@@ -1,6 +1,6 @@
 ---
 title: Entity types are a competing set
-description: You can't recognize persons without also modeling cities and companies: the same string is all three, and only the contrast disambiguates. A principle from rule-based extraction that decides whether an LLM extraction schema is actually separable.
+description: "You can't recognize persons without also modeling cities and companies: the same string is all three, and only the contrast disambiguates. A principle from rule-based extraction that decides whether an LLM extraction schema is actually separable."
 ---
 
 # Entity types are a competing set

@@ -1,6 +1,6 @@
 ---
-title: Trivi: Side-Brain for Trivial Tasks
-description: A tiny PWA that removes friction from quick lookups: translations, explanations, commands, and questions in under a second.
+title: "Trivi: Side-Brain for Trivial Tasks"
+description: "A tiny PWA that removes friction from quick lookups: translations, explanations, commands, and questions in under a second."
 ---
 
 # Trivi: Your Side-Brain for Trivial Tasks

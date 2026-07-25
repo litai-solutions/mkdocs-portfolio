@@ -1,5 +1,5 @@
 ---
-title: AI Shop Assistant: Concept Demo
+title: "AI Shop Assistant: Concept Demo"
 description: A 2-hour prototype showing what's possible when you combine business data with AI, from natural language input to explainable recommendations.
 ---
 
