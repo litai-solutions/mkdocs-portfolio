@@ -9,20 +9,45 @@ canonical_url: https://litai-solutions.com
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "LitAI",
-  "url": "https://litai-solutions.com",
-  "image": "https://avatars.githubusercontent.com/u/34709402?v=4",
-  "sameAs": [
-    "https://www.linkedin.com/in/halyna-galanzina/",
-    "https://github.com/litai-solutions"
-  ],
-  "jobTitle": "AI Production Readiness Specialist",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "LITAI LLC",
-    "url": "https://litai-solutions.com"
-  }
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://litai-solutions.com/#halyna",
+      "name": "Halyna Galanzina",
+      "url": "https://litai-solutions.com",
+      "image": "https://avatars.githubusercontent.com/u/34709402?v=4",
+      "jobTitle": "AI Production Readiness Specialist",
+      "knowsLanguage": ["en", "de", "uk"],
+      "sameAs": [
+        "https://www.linkedin.com/in/halyna-galanzina/",
+        "https://github.com/litai-solutions"
+      ],
+      "worksFor": { "@id": "https://litai-solutions.com/#litai" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://litai-solutions.com/#litai",
+      "name": "LITAI LLC",
+      "url": "https://litai-solutions.com",
+      "email": "halyna@litai-solutions.com",
+      "founder": { "@id": "https://litai-solutions.com/#halyna" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Raleigh",
+        "addressRegion": "NC",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "Germany" },
+        { "@type": "Country", "name": "Ukraine" }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/halyna-galanzina/",
+        "https://github.com/litai-solutions"
+      ]
+    }
+  ]
 }
 </script>
 
@@ -110,6 +135,8 @@ Prototyping with AI is exciting. We have all tried and seen how rewarding it can
 
 I'm Halyna. I've spent 17 years making search and extraction systems work on real documents. Long before LLMs, I was building information extraction pipelines for legal, HR, and government domains, learning what makes retrieval succeed or fail at a fundamental level.
 
+I run LITAI LLC from Raleigh, North Carolina, on US Eastern time, and work with clients here and in Europe. I work in English, German, and Ukrainian.
+
 ## How I think about search
 
 - **In regulated domains, the answer itself is not always the best possible output.** Lawyers, doctors, and auditors need ranked, traceable evidence they can cite and check. That reframes the whole architecture. [Read →](method/regulated-domains-the-answer-is-not-always-the-best-output.md)
@@ -122,3 +149,5 @@ Questions, or want to see if it's a fit?
 
 [Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
 [Email me :material-email-outline:](mailto:halyna@litai-solutions.com){ .md-button }
+
+<p class="contact-location">LITAI LLC · Raleigh, North Carolina · US Eastern time</p>

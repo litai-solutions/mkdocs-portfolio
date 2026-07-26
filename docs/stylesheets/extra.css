@@ -252,3 +252,10 @@
     border-color: #8e92f8;
 }
 
+
+/* Business location line under the contact buttons */
+.md-typeset .contact-location {
+    margin-top: 1.2rem;
+    font-size: 0.72rem;
+    color: var(--md-default-fg-color--light);
+}
