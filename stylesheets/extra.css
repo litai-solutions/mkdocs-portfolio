@@ -94,8 +94,25 @@
     font-weight: 600;
 }
 
-.grid.cards.testimonials > ul > li > p:nth-child(2) a {
-    color: var(--md-accent-fg-color);
+/* Verification link: present, checkable, and quiet.
+   A blue name pulled the eye harder than the quote did. */
+.grid.cards.testimonials .testimonial-verify {
+    display: inline-block;
+    margin-left: 0.35rem;
+    vertical-align: -0.1em;
+    opacity: 0.45;
+    transition: opacity 0.15s ease;
+}
+
+.grid.cards.testimonials .testimonial-verify:hover,
+.grid.cards.testimonials .testimonial-verify:focus-visible {
+    opacity: 1;
+}
+
+.grid.cards.testimonials .testimonial-verify svg {
+    height: 0.85rem;
+    width: 0.85rem;
+    fill: currentColor;
 }
 
 /* Project Summary callout: brand blue, not Material's default light blue */
