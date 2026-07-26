@@ -38,6 +38,11 @@ canonical_url: https://litai-solutions.com
         "addressCountry": "US"
       },
       "areaServed": [
+        { "@type": "City", "name": "Raleigh" },
+        { "@type": "City", "name": "Durham" },
+        { "@type": "City", "name": "Chapel Hill" },
+        { "@type": "City", "name": "Cary" },
+        { "@type": "AdministrativeArea", "name": "Research Triangle, North Carolina" },
         { "@type": "Country", "name": "United States" },
         { "@type": "Country", "name": "Germany" },
         { "@type": "Country", "name": "Ukraine" }
@@ -135,7 +140,7 @@ Prototyping with AI is exciting. We have all tried and seen how rewarding it can
 
 I'm Halyna. I've spent 17 years making search and extraction systems work on real documents. Long before LLMs, I was building information extraction pipelines for legal, HR, and government domains, learning what makes retrieval succeed or fail at a fundamental level.
 
-I run LITAI LLC from Raleigh, North Carolina, on US Eastern time, and work with clients here and in Europe. I work in English, German, and Ukrainian.
+I run LITAI LLC from the Raleigh-Durham area of North Carolina, on US Eastern time, and work with clients here and in Europe. I work in English, German, and Ukrainian.
 
 ## How I think about search
 
@@ -150,4 +155,4 @@ Questions, or want to see if it's a fit?
 [Book Discovery Call :material-arrow-top-right:](https://calendly.com/halyna-litai-solutions/discovery){target="_blank" .md-button .md-button--primary }
 [Email me :material-email-outline:](mailto:halyna@litai-solutions.com){ .md-button }
 
-<p class="contact-location">LITAI LLC · Raleigh, North Carolina · US Eastern time</p>
+<p class="contact-location">LITAI LLC · Raleigh-Durham, North Carolina · US Eastern time</p>
