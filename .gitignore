@@ -105,3 +105,7 @@ drafts/
 # Built site (rebuilt by gh-deploy)
 site/
 tmp-reports/
+# Cassian knowledge base and planning notes — local only, deliberately untracked.
+# Purged from git history 2026-07-29: this repo is public and the notes contain
+# rates, pricing deliberations and positioning strategy.
+Plans/
