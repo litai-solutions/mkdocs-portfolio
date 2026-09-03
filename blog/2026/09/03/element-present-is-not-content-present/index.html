@@ -1264,10 +1264,9 @@
 
 <p>But it's 400k+ documents, and I am always suspicious about human-produced content, so "looks correct" is not an option.</p>
 <p>The AI had read a handful of documents and derived a schema from them. That schema is an assumption, so we ran a preflight over the whole corpus before transforming anything.</p>
-<p>Every document had the content element we expected: 100% present. A "does this field exist?" check passes all of them. About 1 in 6 had it present and empty, the text sitting in a second element the transformer never read. Those would have indexed blank. Silently.</p>
-<p>Element present ≠ content present.</p>
-<p>The preflight report is what decided which element to read and what the fallback is, and the transformer got written around that.</p>
-<p><strong>assumption → preflight → analysis → strategy → transform</strong></p>
+<p>Every document had the content element we expected: 100% present. A "does this field exist?" check passes all of them. About 1 in 6 had it present and empty, the text sitting in a second element the transformer never read.</p>
+<p>Then we redesigned the whole preflight, checked and challenged all the assumptions, discussed and agreed on edge cases and finally after several preflight iterations had the robust transformation plan, and the transformer got written around that. The skill out of this work:</p>
+<p><strong>first assumptions → preflight → analysis → strategy → transform</strong></p>
 
 
 
