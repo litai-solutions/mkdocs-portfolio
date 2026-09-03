@@ -6,32 +6,30 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Posts on building search and extraction systems for complex documents, and on measuring whether they work.">
+        <meta name="description" content="A transformer that ran green on 400k+ documents, and the preflight that caught what the green test run could not">
       
       
       
-        <link rel="canonical" href="https://litai-solutions.com/blog/">
+        <link rel="canonical" href="https://litai-solutions.com/blog/2026/09/03/element-present-is-not-content-present/">
       
       
-        <link rel="prev" href="../case-studies/trivi/">
+        <link rel="prev" href="../../../03/16/building-trivi-bot/">
       
       
-        <link rel="next" href="category/ai-engineering/">
       
-      
-      <link rel="icon" href="../assets/Logo-Icon-1.png">
+      <link rel="icon" href="../../../../../assets/Logo-Icon-1.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
-        <title>Notes on extraction, retrieval, and evaluation - LITAI LLC</title>
+        <title>Element present ≠ content present - LITAI LLC</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,11 +48,11 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../stylesheets/hero.css">
+      <link rel="stylesheet" href="../../../../../stylesheets/hero.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -83,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blog" class="md-skip">
+        <a href="#element-present-content-present" class="md-skip">
           Skip to content
         </a>
       
@@ -99,9 +97,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="LITAI LLC" class="md-header__button md-logo" aria-label="LITAI LLC" data-md-component="logo">
+    <a href="../../../../.." title="LITAI LLC" class="md-header__button md-logo" aria-label="LITAI LLC" data-md-component="logo">
       
-  <img src="../assets/Logo-Icon-1.png" alt="logo">
+  <img src="../../../../../assets/Logo-Icon-1.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -118,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Notes on extraction, retrieval, and evaluation
+              Element present ≠ content present
             
           </span>
         </div>
@@ -209,7 +207,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
     
@@ -226,7 +224,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../services/" class="md-tabs__link">
+      <a href="../../../../../services/" class="md-tabs__link">
         
   
     
@@ -245,7 +243,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../method/" class="md-tabs__link">
+        <a href="../../../../../method/" class="md-tabs__link">
           
   
   Method
@@ -263,7 +261,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../case-studies/" class="md-tabs__link">
+        <a href="../../../../../case-studies/" class="md-tabs__link">
           
   
   Case Studies
@@ -283,7 +281,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../../../../" class="md-tabs__link">
           
   
   Blog
@@ -311,7 +309,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -324,9 +324,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="LITAI LLC" class="md-nav__button md-logo" aria-label="LITAI LLC" data-md-component="logo">
+    <a href="../../../../.." title="LITAI LLC" class="md-nav__button md-logo" aria-label="LITAI LLC" data-md-component="logo">
       
-  <img src="../assets/Logo-Icon-1.png" alt="logo">
+  <img src="../../../../../assets/Logo-Icon-1.png" alt="logo">
 
     </a>
     LITAI LLC
@@ -341,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -362,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../services/" class="md-nav__link">
+      <a href="../../../../../services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -424,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../method/" class="md-nav__link">
+      <a href="../../../../../method/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../method/regulated-domains-the-answer-is-not-always-the-best-output/" class="md-nav__link">
+      <a href="../../../../../method/regulated-domains-the-answer-is-not-always-the-best-output/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -468,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../method/judge-diagnoses-not-scores/" class="md-nav__link">
+      <a href="../../../../../method/judge-diagnoses-not-scores/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -490,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../method/entity-types-are-a-competing-set/" class="md-nav__link">
+      <a href="../../../../../method/entity-types-are-a-competing-set/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -560,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../case-studies/" class="md-nav__link">
+      <a href="../../../../../case-studies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -623,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../case-studies/investment-data-extraction/" class="md-nav__link">
+      <a href="../../../../../case-studies/investment-data-extraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -645,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../case-studies/rag-evaluation-infrastructure/" class="md-nav__link">
+      <a href="../../../../../case-studies/rag-evaluation-infrastructure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -667,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../case-studies/medical-document-intelligence/" class="md-nav__link">
+      <a href="../../../../../case-studies/medical-document-intelligence/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -738,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../case-studies/trivi/" class="md-nav__link">
+      <a href="../../../../../case-studies/trivi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -822,19 +822,10 @@
   
   
     
-      
-    
   
   
     <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -844,7 +835,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -903,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="archive/2026/" class="md-nav__link">
+      <a href="../../../../archive/2026/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -927,7 +917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="archive/2025/" class="md-nav__link">
+      <a href="../../../../archive/2025/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -951,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1027,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="category/ai-engineering/" class="md-nav__link">
+      <a href="../../../../category/ai-engineering/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1051,7 +1041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="category/data-engineering/" class="md-nav__link">
+      <a href="../../../../category/data-engineering/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1075,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="category/engineering-culture/" class="md-nav__link">
+      <a href="../../../../category/engineering-culture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1099,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="category/evaluation/" class="md-nav__link">
+      <a href="../../../../category/evaluation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1123,7 +1113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="category/information-extraction/" class="md-nav__link">
+      <a href="../../../../category/information-extraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1162,366 +1152,140 @@
             
           
           
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h1 id="blog">Blog</h1>
-      </header>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://avatars.githubusercontent.com/u/34709402?v=4" alt="Halyna Galanzina">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-09-03 00:00:00+00:00">September 3, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
             
-              <a href="category/data-engineering/" class="md-meta__link">Data Engineering</a>, 
-              <a href="category/ai-engineering/" class="md-meta__link">AI Engineering</a></li>
-        
-        
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/34709402?v=4" alt="Halyna Galanzina">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          <a href="https://www.linkedin.com/in/halyna-galanzina/">Halyna Galanzina</a>
+                        
+                      </strong>
+                      <br>
+                      AI Solutions Architect & Founder of LITAI LLC
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-09-03 00:00:00+00:00" class="md-ellipsis">September 3, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <span class="md-ellipsis">
+                            in
+                            
+                              <a href="../../../../category/data-engineering/">Data Engineering</a>, 
+                              <a href="../../../../category/ai-engineering/">AI Engineering</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              1 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
           
-          <li class="md-meta__item">
             
-              1 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="element-present-content-present"><a class="toclink" href="2026/09/03/element-present-is-not-content-present/">Element present ≠ content present</a></h2>
-<p>I gave an AI a corpus transformer to write. It came back clean: parsed the XML, mapped every field, ran green. On a small dataset I'd have shipped it.</p>
 
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
     
-      <nav class="md-post__action">
-        <a href="2026/09/03/element-present-is-not-content-present/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://avatars.githubusercontent.com/u/34709402?v=4" alt="Halyna Galanzina">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-03-16 00:00:00+00:00">March 16, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/ai-engineering/" class="md-meta__link">AI Engineering</a>, 
-              <a href="category/engineering-culture/" class="md-meta__link">Engineering Culture</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="building-trivi-a-side-brain-for-trivial-tasks"><a class="toclink" href="2026/03/16/building-trivi-bot/">Building Trivi: a side-brain for trivial tasks</a></h2>
-<p>I built Trivi because I kept skipping words.</p>
-<p>Just unfamiliar ones. Terms I half-knew, expressions I'd seen but never pinned down, bash commands I couldn't quite remember. Every time I hit one, the same calculation ran in my head: <em>Is it worth breaking my flow to look this up?</em> The answer was usually no.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="2026/03/16/building-trivi-bot/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://avatars.githubusercontent.com/u/34709402?v=4" alt="Halyna Galanzina">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-03-13 00:00:00+00:00">March 13, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/ai-engineering/" class="md-meta__link">AI Engineering</a>, 
-              <a href="category/engineering-culture/" class="md-meta__link">Engineering Culture</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="ai-and-expansion-of-ambition"><a class="toclink" href="2026/03/13/ai-and-productivity/">AI and expansion of ambition</a></h2>
-<p><img alt="AI and expansion of ambition" src="images/productivity-expansion.png" /></p>
-<p>I keep noticing this new pattern in how I work, think, and make decisions. Recently, it showed up so clearly that I felt it was worth writing down.</p>
-<p>I was trained to think economically about software work. Count your operations, mind your memory, justify your complexity. Big-O thinking does not stay in the algorithms course, it shapes how you approach everything: automate and optimize. Now I keep automation and I learn to drop optimizing. I have a vision for how I want to build and evaluate, and for the first time the friction is low enough to actually follow it.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="2026/03/13/ai-and-productivity/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://avatars.githubusercontent.com/u/34709402?v=4" alt="Halyna Galanzina">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-09-10 00:00:00+00:00">September 10, 2025</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/evaluation/" class="md-meta__link">Evaluation</a>, 
-              <a href="category/information-extraction/" class="md-meta__link">Information Extraction</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="citations-as-deterministic-anchors"><a class="toclink" href="2025/09/10/citations-as-deterministic-anchors/">Citations as deterministic anchors</a></h2>
-<p>Trust in AI is built on transparency. Every extracted field carries a citation back to the exact source passage, and the full extraction set is scored against a benchmark. They answer different questions, at different moments. The benchmark answers whether the pipeline is good enough to ship; that is my question, once, before release. The citation answers where a specific number came from; that is the user's question, every day after.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="2025/09/10/citations-as-deterministic-anchors/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://avatars.githubusercontent.com/u/34709402?v=4" alt="Halyna Galanzina">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-07-20 00:00:00+00:00">July 20, 2025</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/ai-engineering/" class="md-meta__link">AI Engineering</a>, 
-              <a href="category/information-extraction/" class="md-meta__link">Information Extraction</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="precision-is-table-stakes-recall-is-the-frontier"><a class="toclink" href="2025/07/20/precision-table-stakes-recall-frontier/">Precision is table stakes; recall is the frontier</a></h2>
-<p>Most of the worry around large language models lands on hallucinations, meaning incorrect information. Achieving 100% precision is a prerequisite for any financial data system. According to my evaluations for professional-grade extraction with LLMs, the harder challenge is recall. If an LLM encounters a complex website structure or a 50-page legal document, it misses details buried deep in the text.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="2025/07/20/precision-table-stakes-recall-frontier/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://avatars.githubusercontent.com/u/34709402?v=4" alt="Halyna Galanzina">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-06-15 00:00:00+00:00">June 15, 2025</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/data-engineering/" class="md-meta__link">Data Engineering</a>, 
-              <a href="category/ai-engineering/" class="md-meta__link">AI Engineering</a>, 
-              <a href="category/information-extraction/" class="md-meta__link">Information Extraction</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="the-decay-of-manual-excellence"><a class="toclink" href="2025/06/15/the-decay-of-manual-excellence/">The decay of manual excellence</a></h2>
-<p>High-quality data is often a point of pride for any company collecting them. In a recent engagement, the client had built a reliable database through a rigorous, labor-intensive process where mid-level staff reviewed every entry made by junior analysts. Even the most careful manual process eventually hits a wall: the velocity of information. In investments, data ages rapidly, and a manual team cannot scale their output to keep pace with the market without a linear increase in headcount.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="2025/06/15/the-decay-of-manual-excellence/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://avatars.githubusercontent.com/u/34709402?v=4" alt="Halyna Galanzina">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-11-03 00:00:00+00:00">November 3, 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/ai-engineering/" class="md-meta__link">AI Engineering</a>, 
-              <a href="category/engineering-culture/" class="md-meta__link">Engineering Culture</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="breaking-up-with-jupyter-notebooks"><a class="toclink" href="2024/11/03/breaking-up-with-jupyter-notebooks/">Breaking up with Jupyter Notebooks</a></h2>
-<p><img alt="Breaking up with Jupyter Notebooks" src="images/Jypyter-blogpost.jpg" /></p>
-<p>So, Jupyter Notebooks. We had some good times, didn't we?</p>
-<p>Writing code and seeing the results instantly felt great. But over time, the quirks I once found charming became... less so. Navigating between cells to find code? Frustrating. Forget to run a cell, and dependencies laugh in your face. And the workflow... Each function, each step in an experiment, means executing cells manually, at a time. It felt like trying to bake a cake but having to preheat the oven separately for every ingredient.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="2024/11/03/breaking-up-with-jupyter-notebooks/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-      
-        
-          
-
-
-
-<nav class="md-pagination">
+  
   
 </nav>
-        
-      
+          
+        </div>
+      </div>
     </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+
+<h1 id="element-present-content-present">Element present ≠ content present</h1>
+<p>I gave an AI a corpus transformer to write. It came back clean: parsed the XML, mapped every field, ran green. On a small dataset I'd have shipped it.</p>
+<!-- more -->
+
+<p>But it's 400k+ documents, and I am always suspicious about human-produced content, so "looks correct" is not an option.</p>
+<p>The AI had read a handful of documents and derived a schema from them. That schema is an assumption, so we ran a preflight over the whole corpus before transforming anything.</p>
+<p>Every document had the content element we expected: 100% present. A "does this field exist?" check passes all of them. About 1 in 6 had it present and empty, the text sitting in a second element the transformer never read. Those would have indexed blank. Silently.</p>
+<p>Element present ≠ content present.</p>
+<p>The preflight report is what decided which element to read and what the fallback is, and the transformer got written around that.</p>
+<p><strong>assumption → preflight → analysis → strategy → transform</strong></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
   </div>
 
           
@@ -1536,10 +1300,12 @@
   
     
       
+        
+      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../case-studies/trivi/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Trivi: Side-Brain for Trivial Tasks">
+          <a href="../../../03/16/building-trivi-bot/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Building Trivi: a side-brain for trivial tasks">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1549,27 +1315,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Trivi: Side-Brain for Trivial Tasks
+                Building Trivi: a side-brain for trivial tasks
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="category/ai-engineering/" class="md-footer__link md-footer__link--next" aria-label="Next: AI Engineering">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                AI Engineering
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -1626,10 +1376,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.instant.prefetch", "content.tooltips", "content.tabs.link", "content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["search.suggest", "toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.instant.prefetch", "content.tooltips", "content.tabs.link", "content.code.copy", "navigation.footer"], "search": "../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
       
