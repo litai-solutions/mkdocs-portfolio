@@ -109,3 +109,6 @@ tmp-reports/
 # Purged from git history 2026-07-29: this repo is public and the notes contain
 # rates, pricing deliberations and positioning strategy.
 Plans/
+# Assistant instructions and push/auth notes — local only, deliberately untracked.
+CLAUDE.md
+AUTH_NOTES.md
